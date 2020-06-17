@@ -1,0 +1,264 @@
+/* latex style override */
+article>div,
+article>header,
+article>footer {
+    margin-top: 0 !important;
+}
+
+article>div>*,
+article>footer>* {
+    margin-left: 1em !important;
+    margin-right: 1em !important;
+}
+footer li {
+    font-family: roboto, sans-serif;
+    color: #006889;
+    font-weight: 300;
+    /* font-size: .85em; */
+}
+footer p {
+    font-family: roboto, sans-serif;
+    color: #006889;
+    font-weight: 300;
+    padding-left: .5em;
+    padding-right: 1em;
+}
+.full-text li {
+    font-family: roboto, sans-serif;
+    font-weight: 300;
+    font-size: .9em;
+}
+.left-right li {
+    font-family: roboto, sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+h2,
+h3,
+h4 {
+    margin-top: 1.4rem !important;
+    margin-bottom: 1.4rem !important;
+}
+
+/*Up Button*/
+#fixedbutton {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    max-width: 3%;
+}
+
+/* slideshow formatting */
+article {
+    background: url(../images/BlockchainInstitute_Logo_COLOR.png) no-repeat;
+    background-position: top 1.5em right 1em;
+    background-size: 100px;
+    border: 5px solid #efefef;
+    margin-bottom: 2.25em;
+}
+header h3 {
+    margin-right: 4em;
+}
+article h4 {
+    padding-left: .3em;
+}
+h5 {
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 1.25em;
+    padding-left: .1em;
+    color: #006889;
+}
+cite {
+    font-family: "Open Sans", sans-serif;
+    font-size: .8em;
+    color: #006889;
+}
+blockquote {
+    text-align-last: center;
+}
+ul ul {
+    font-size: 1em;
+}
+
+
+
+article>header {
+    padding-left: 2.5ex;
+    padding-right: 2.5ex;
+}
+
+article>div {
+    min-height: 300px;
+    overflow-y: auto;
+    z-index: 0;
+    /* padding: 1em; */
+}
+figure {
+    padding-bottom: 1em;
+}
+
+article>footer {
+    background: #efefef;
+    color: gray;
+    font-style: italic;
+    min-height: 100px;
+    /*max-height: 100px;*/
+    overflow-y: scroll;
+    font-size: 75%;
+    padding-bottom: 1.5em;
+}
+
+
+
+footer .subtitle {
+    font-size: 110%;
+    font-style: normal;
+    color: black;
+    padding-left: .2em;
+}
+
+
+figcaption {
+    font-style: italic;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+    font-size: .8em;
+    margin-top: .5em !important;
+}
+
+figcaption>cite {
+    font-size: 75%;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dl,
+dd {
+    text-align: left !important;
+}
+
+article.title-break header,
+article.prompt-question header {
+    /*margin-bottom: -150px;*/
+    text-align: center;
+    font-size: 150%;
+    position: absolute;
+    z-index: 10;
+    display: block;
+    width: 600px;
+    clear: both;
+    text-align: center;
+    padding-top: 125px;
+}
+
+article.title-break header {
+    color: white;
+
+}
+
+article.title-break>div {
+    background: url(../images/blue-background.png) center;
+    background-size: contain;
+    min-height: 350px;
+}
+.title-break h2 {
+    text-transform: uppercase;
+    font-size: 1.4em;
+}
+
+article.left-right div > * {
+    display: inline-block;
+    width: 50%;
+}
+article.left-right figure {
+    float: right;
+    width: 35%;
+}
+
+article.right-left figure {
+    float: left;
+    width: 60%;
+}
+
+article.top-bottom {}
+
+article.full-image>div>figure>img {
+    width: 100%;
+}
+
+article.prompt-question>div {
+    background: url(../images/background-pink.png) center;
+    background-size: contain;
+    min-height: 350px;
+}
+.prompt-question h3 {
+    color: #b13173;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    margin-right: 0em;
+}
+.prompt-question h2 {
+    color: #b13173;
+    text-transform: uppercase;
+    font-size: 1.3em;
+}
+
+
+/* Slide speific tweaks */
+
+#toc>li {
+    color: #000000;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: .9em;
+}
+ol#toc>li.section {
+    /* background-color: teal; */
+    /* border-top: 1px solid gray; */
+    font-family: kanit, sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
+    margin-top: 1em;
+}
+ol#toc>li.section a {
+    /*color: white;*/
+    font-size: 110%;
+    font-weight: bold;
+    color: #00a599;
+}
+#blockchain-business div p {
+    font-weight: 300;
+}
+#thanks div p {
+    font-weight: 300;
+}
+#license div p {
+    font-weight: 300;
+}
+#how-to-join-us div p {
+    font-weight: 300;
+}
+#housekeeping div p {
+    font-weight: 300;
+}
+
+
+
+
+/*Hide notes in footers (LEAVE AT BOTTOM)*/
+
+/*
+footer p:not(:first-child) {
+    display: none;
+}
+footer ul, ol, h4, h5, blockquote {
+    display: none;
+}
+*/
+
+

@@ -1,0 +1,95 @@
+---
+title: Full CCC Instructors Guide
+layout: teachers-guide
+---
+
+ <a href="#top"><img src="assets/img/UPbutton-01.png" id="fixedbutton"></a>
+    <h1>Crypto Curious Course</h1>
+    <p class="author">Blockchain Institute <br> June 2020</p>
+    <div class="abstract">
+        <h4>A comprehensive guide to teaching Crypto Curious Course</h4>
+        <p>This guide will give you a rundown on the basics of cryptocurrency and blockchain with the aim of getting you comfortable with cryptocurrencies and blockchain technology. Before going over the specifics you will take a look at the context in which Bitcoin was launched into the world.</p>
+    </div>
+    <div id="housekeeping">
+        <h5>Housekeeping</h5>
+        <div>
+            <p>This course is 2-3 hours long. Breaks may be helpful for discussion, but the content has been disnged to hold questions until the end.<p>
+            </p>
+            <ul>
+                <li>You are free to:</li>
+                <ul>
+                    <li>Copy and redistributed the material in any medium or format</li>
+                    <li>Remix, transform, and build upon the material for any purpose</li>
+                </ul>
+            </ul>
+            <ul>
+                <li>Provided:</li>
+                <ul>
+                    <li>You give appropriate credit</li>
+                    <li>Provide a link to the licence</li>
+                    <li>Indicate if changes were made</li>
+                </ul>
+            </ul>
+
+            <!-- <figure><img alt="Blockchain Institute" src="assets/img/housekeeping.jpg" alt=""></figure> -->
+        </div>
+    </div>
+    <div id="blockchain-institute">
+        <h5>About Blockchain Institute</h5>
+        <p><a href="https://weteachblockchain.org/" target="_blank">Blockchain Institute</a> is a United States 501(c)(3) non-profit charity whose mandate is to provide education to the public </p>
+        <img alt="" src="assets/img/heart.black.png" alt="" width="35">
+        <ul>
+            <li>The content is released under <a href="#license">CC BY 4.0</a></li>
+            <li>Follow us on social media!</li>
+            <ul>
+                <li>Twitter: <a href="https://twitter.com/bchaininstitute" target="_blank">@bchaininstitute</a></li>
+                <li>Facebook: <a href="https://www.facebook.com/TheBlockchainInstitute/" target="_blank">theblockchaininstitute</a></li>
+                <li>Instagram: <a href="https://www.instagram.com/theblockchaininstitute/" target="_blank">theblockchaininstitute</a></li>
+            </ul>
+
+        </ul>
+    </div>
+    <div>
+        <h2>Table of Contents</h2>
+        <ol id="toc">
+
+		{% for slide in site.slides %}
+
+			{% if slide.type == "title" %}
+	        	<li class="section"><a href="{{ slide.id }}">{{ slide.title }}</a></li>
+			{% else %} 
+	            <li><a href="{{ slide.id }}">{{ slide.title }}</a></li>
+			{% endif %}
+
+		{% endfor %}
+
+        </ol>
+    </div>       
+
+{% for slide in site.slides %}
+
+	{% if slide.type == "title" %}
+		{% include defaultSlide.html 
+			slideId=slide.id
+			title=slide.title
+			notes=slide.content
+		%}
+	{% elsif slide.type == "text" %} 
+		{% include textSlide.html 
+			slideId=slide.id
+			title=slide.title
+			body=slide.content
+		%}
+	{% elsif slide.type == "default" %} 
+		{% include defaultSlide.html 
+			slideId=slide.id
+			title=slide.title
+			img=slide.img
+			imgAlt=slide.imgAlt
+			imgCaption=slide.imgCaption
+			imgTitle=slide.imgTitle
+			notes=slide.content
+		%}
+	{% endif %}
+
+{% endfor %}

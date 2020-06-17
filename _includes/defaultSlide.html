@@ -1,0 +1,18 @@
+<article id="{{ include.slideId }}">    
+    <header>
+        <h2>{{ include.title }}</h2>
+    </header>
+    <div>
+        <figure>
+            <img alt="{{ include.imgAlt }}" src="assets/img/{{ include.img }}" title="{{ include.imgTitle }}">
+            {% if include.imgCaption %}
+                <figcaption>
+                    {{ include.imgCaption }}
+                </figcaption>
+            {% endif %}    
+        </figure>        
+    </div>
+    <footer>
+        {{ include.notes }}
+    </footer>
+</article>
