@@ -1,11 +1,11 @@
 --- 
-title: Q&A
-id: questions-and-answers
-type: default
-img: undefined
-imgTitle: undefined
-imgAlt: undefined
+title: "Q&A"
+slideId: "questions-and-answers"
+type: "default"
+img: ""
+imgTitle: ""
+imgAlt: ""
+notes: | 
+body: | 
+        
 ---
-
-undefined
-

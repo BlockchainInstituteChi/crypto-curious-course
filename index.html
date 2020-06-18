@@ -54,41 +54,48 @@ layout: teachers-guide
         <ol id="toc">
 
 		{% for slide in site.slides %}
-
-			{% if slide.type == "title" %}
-	        	<li class="section"><a href="{{ slide.id }}">{{ slide.title }}</a></li>
-			{% else %} 
-	            <li><a href="{{ slide.id }}">{{ slide.title }}</a></li>
-			{% endif %}
-
+			{% if slide.type == "title" %}<li class="section"><a href="#{{ slide.slideId }}">{{ slide.title }}</a></li>{% else %}<li><a href="#{{ slide.slideId }}">{{ slide.title }}</a></li>{% endif %}
 		{% endfor %}
 
         </ol>
     </div>       
-
+{% assign sorted = site.slides | sort: 'slideId' %}
 {% for slide in site.slides %}
 
 	{% if slide.type == "title" %}
-		{% include defaultSlide.html 
-			slideId=slide.id
+		{% include titleSlide.html 
+			slideId=slide.slideId
 			title=slide.title
-			notes=slide.content
+			notes=slide.notes
 		%}
 	{% elsif slide.type == "text" %} 
 		{% include textSlide.html 
-			slideId=slide.id
+			slideId=slide.slideId
 			title=slide.title
-			body=slide.content
-		%}
-	{% elsif slide.type == "default" %} 
-		{% include defaultSlide.html 
-			slideId=slide.id
+			content=slide.body
+			notes=slide.notes
+        %}
+    {% elsif slide.type == "left-right" %} 
+		{% include leftRightSlide.html 
+			slideId=slide.slideId
 			title=slide.title
 			img=slide.img
 			imgAlt=slide.imgAlt
 			imgCaption=slide.imgCaption
 			imgTitle=slide.imgTitle
-			notes=slide.content
+			content=slide.body
+			notes=slide.notes
+		%}        
+	{% elsif slide.type == "default" %} 
+		{% include defaultSlide.html 
+			slideId=slide.slideId
+			title=slide.title
+			img=slide.img
+			imgAlt=slide.imgAlt
+			imgCaption=slide.imgCaption
+			imgTitle=slide.imgTitle
+            notes=slide.notes
+            content=slide.body
 		%}
 	{% endif %}
 
