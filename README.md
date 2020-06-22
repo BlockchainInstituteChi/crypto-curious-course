@@ -14,7 +14,11 @@ Notes on Conversion:
     - Types: 
         title-break, 
         full-image, 
-        left-right, ???
+        full-text,
+        left-right, 
+        top-bottom,
+        prompt-question,
+        video (see custodial-noncustodial) w/ andreas video
 
     - Variables:
         title : String - header title
@@ -23,14 +27,21 @@ Notes on Conversion:
         notes : |
             Mutli-Line 
             String
-        isQuestionSlide : boolean
-        isSectionHead : boolean
+
       if ( title-break )
-        ? no extra ? 
+        isSectionHead : true
+
       if ( full-image ) 
         img : String - name of an image file in /assets/img/
         imgTitle : String - the title text for the image
         imgAlt : String - the Alt text for the image
+
+      if ( full-text ) 
+        bodyText : |
+            multi-
+            line
+            text
+
       if ( left-right ) 
         rightContent : | 
             multi 
@@ -39,5 +50,16 @@ Notes on Conversion:
         leftContent : | 
             multi 
             line 
-            text            
-      
+            text
+
+      if ( top-bottom ) 
+        bodyText : |
+            multi-
+            line
+            text 
+        img : String - name of an image file in /assets/img/
+        imgTitle : String - the title text for the image
+        imgAlt : String - the Alt text for the image
+
+      if ( prompt-question ) 
+        isQuestionSlide : true

@@ -57,41 +57,63 @@ ogDesc: Become a blockchain ambassador today!
         <ol id="toc">
 
 		{% for slide in site.slides %}
-			{% if slide.type == "title" %}<li class="section"><a href="#{{ slide.slideId }}">{{ slide.title }}</a></li>{% else %}<li><a href="#{{ slide.slideId }}">{{ slide.title }}</a></li>{% endif %}
+            <li class="{% if slide.isSectionHead == true or slide.type == 'title-break' %}section{% elsif slide.isQuestionSlide == true  or slide.type == 'prompt-question' %}question-slide{% endif %}"><a href="#{{ slide.slideId }}">{{ slide.title }}</a></li>
 		{% endfor %}
 
         </ol>
     </div>       
 {% assign sorted = site.slides | sort: 'slideId' %}
 {% for slide in site.slides %}
-
-    {% if slide.type == "title" %}
-		{% include defaultSlide.html 
+    {% if slide.type == "title-break" %}
+		{% include title-break.html 
+            slideId=slide.slideId
+			title=slide.title
+			notes=slide.notes
+        %}
+    {% elsif slide.type == "full-image" %}
+		{% include full-image-slide.html 
             slideId=slide.slideId
             img=slide.img
             imgAlt=slide.imgAlt
             imgTitle=slide.imgTitle
+            imgCaption=slide.imgCaption
 			title=slide.title
 			notes=slide.notes
-		%}
-	{% elsif slide.type == "text" %} 
-		{% include textSlide.html 
+		%}    
+	{% elsif slide.type == "full-text" %} 
+		{% include full-text-slide.html 
 			slideId=slide.slideId
 			title=slide.title
-			content=slide.body
+			content=slide.bodyText
 			notes=slide.notes
         %}
     {% elsif slide.type == "left-right" %} 
 		{% include leftRightSlide.html 
 			slideId=slide.slideId
 			title=slide.title
-			img=slide.img
-			imgAlt=slide.imgAlt
-			imgCaption=slide.imgCaption
-			imgTitle=slide.imgTitle
-			content=slide.body
+			content=slide.bodyText
 			notes=slide.notes
-		%}        
+        %}   
+    {% elsif slide.type == "top-bottom" %} 
+		{% include top-bottom-slide.html 
+			slideId=slide.slideId
+			title=slide.title
+			content=slide.bodyText
+			notes=slide.notes
+        %}    
+    {% elsif slide.type == "prompt-question" %} 
+		{% include question-prompt-slide.html 
+			slideId=slide.slideId
+			title=slide.title
+			notes=slide.notes
+        %}
+    {% elsif slide.type == "custom" %} 
+		{% include custom-slide.html 
+			slideId=slide.slideId
+			title=slide.title
+            notes=slide.notes
+            content=slide.body
+		%}                                   
 	{% elsif slide.type == "default" %} 
 		{% include defaultSlide.html 
 			slideId=slide.slideId
@@ -102,7 +124,7 @@ ogDesc: Become a blockchain ambassador today!
 			imgTitle=slide.imgTitle
             notes=slide.notes
             content=slide.body
-		%}
+        %} 
 	{% endif %}
 
 {% endfor %}

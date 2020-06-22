@@ -1,16 +1,12 @@
 --- 
 title: "Data Signing"
 slideId: "data-signing"
-type: "default"
+type: "full-image"
 img: "data_signing.jpg"
 imgTitle: "Data Signing"
 imgAlt: "Data signing"
 notes: | 
-            <p class="subtitle">In order to initiate a transaction, it must be signed by use of a private password.</p>
-            <p>The first step in a transaction is initiating it. Through a secure process known as data signing, a user can prove ownership of funds, then send those funds to a desired recipient. </p>
-            <p>The transferer utilizes their cryptographic password in order to sign-off on the transaction, sending it to a specified member of the network. The transaction cannot start without this process. Since a cryptographically derived password, or private key, is signing the message, you can be assured that the true holder of the cryptocurrency is actually sending the transaction. </p>
-        
-body: | 
-            <figure><img alt="Data signing" src="assets/img/data_signing.jpg" title="Data Signing"></figure>
-        
+    <p class="subtitle">In order to initiate a transaction, it must be signed by use of a private password.</p>
+    <p>The first step in a transaction is initiating it. Through a secure process known as data signing, a user can prove ownership of funds, then send those funds to a desired recipient. </p>
+    <p>The transferer utilizes their cryptographic password in order to sign-off on the transaction, sending it to a specified member of the network. The transaction cannot start without this process. Since a cryptographically derived password, or private key, is signing the message, you can be assured that the true holder of the cryptocurrency is actually sending the transaction. </p>
 ---
