@@ -2,6 +2,9 @@
 title: "Summary"
 slideId: "course-summary"
 type: left-right
+imgAlt: "Course Goals" 
+img: "course_goals.png"
+imgTitle: "Course Goals"
 notes: | 
     <p class="subtitle">Review course goals.</p>
     <p>Congratulations! You have completed the Crypto Curious Course! Here&apos;s a recap of what was covered:</p>
@@ -22,7 +25,5 @@ bodyText: |
         <li>Define cryptocurrency and how it&apos;s different than traditional money</li>
         <li>How blockchain may impact the world</li>
     </ul>
-    <figure><img alt="Course Goals" src="assets/img/course_goals.png" title="Course Goals"></figure>
-
 ---
 

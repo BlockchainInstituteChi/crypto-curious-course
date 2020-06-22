@@ -5,6 +5,7 @@ type: "top-bottom"
 img: "gas_price.png"
 imgTitle: "Why Blockchains Aren't Free"
 imgAlt: "Ethereum gas prices"
+imgCaption: "<cite>Ethereum Gas Prices <a href='https://ethgasstation.info/' target='_blank'>(ethgasstation.info)</a></cite>"
 notes: | 
     <p class="subtitle">Fees are used to prevent network resources ffrom being wasted. They are calculated by the amount of data, or network resources, needed to execute a transaction.</p>
     <p>Interestingly enough, fees are not determined on the value of the transaction, but rather the amount of data that&apos;s being transacted. </p>
@@ -15,7 +16,4 @@ bodyText: |
         <li>This reduces spam, otherwise blockchains would become overrun like email</li>
         <li>Freedom of speech</li>
     </ul>
-    <figure><img alt="Ethereum gas prices" src="assets/img/gas_price.png" title="Why Blockchains Aren&apos;t Free">
-        <figcaption><cite>Ethereum Gas Prices <a href="https://ethgasstation.info/">(ethgasstation.info)</a></cite></figcaption>
-    </figure>
 ---

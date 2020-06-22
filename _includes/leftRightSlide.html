@@ -3,7 +3,15 @@
         <h3>{{ include.title }}</h3>
     </header>
     <div>
-        {{ include.content }}   
+        {{ include.content }}  
+        <figure>
+            <img alt="{{ include.imgAlt }}" src="assets/img/{{ include.img }}" title="{{ include.imgTitle }}">
+            {% if include.imgCaption %}
+                <figcaption>
+                    {{ include.imgCaption }}
+                </figcaption>
+            {% endif %}    
+        </figure>                 
     </div>
     <footer>
         {{ include.notes }}

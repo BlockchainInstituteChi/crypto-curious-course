@@ -15,9 +15,8 @@ bodyText: |
         <li>CheapAir (Airline bookings)</li>
         <li>NewEgg (Technology equipment)</li>
     </ul>
-    <figure><img alt="Purchase a flight with bitcoin" src="assets/img/cheapair_checkout.png" title="Companies Accepting Crypto">
-        <figcaption><cite>Buy Flights with Cryptocurrency <a href="https://www.cheapair.com/">(cheapair.com)</a></cite></figcaption>
-    </figure>
-        
+img: cheapair_checkout.png
+imgAlt: "Purchase a flight with bitcoin"
+imgTitle: "Companies Accepting Crypto"
+imgCaption: "<cite>Buy Flights with Cryptocurrency <a href='https://www.cheapair.com/'>(cheapair.com)</a></cite>"      
 ---
-

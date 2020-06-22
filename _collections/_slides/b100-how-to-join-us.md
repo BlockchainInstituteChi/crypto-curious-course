@@ -2,6 +2,9 @@
 title: "How to Join Us"
 slideId: "how-to-join-us"
 type: left-right
+img : "housekeeping.jpg"
+imgTitle : "How To Join Us"
+imgAlt : "Blockchain Institute"
 notes: | 
 bodyText: | 
     <p><a href="https://theblockchaininstitute.us18.list-manage.com/subscribe?u=ed27e0082d5f7e8d5cd3e3622&amp;id=d50da5888a" target="_blank">Sign up for our Newsletter!</a></p>
@@ -12,6 +15,5 @@ bodyText: |
         <li>Instagram: <a href="https://www.instagram.com/theblockchaininstitute/" target="_blank">theblockchaininstitute</a></li>
     </ul>
     <p>Apply to become a <a href="https://weteachblockchain.org/ambassadors/" target="_blank">Blockchain Ambassador!</a></p>
-    <figure><img alt="Blockchain Institute" src="assets/img/housekeeping.jpg" title="How To Join Us"></figure>
 ---
 

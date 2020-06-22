@@ -22,7 +22,8 @@ bodyText: |
             <li>Reward is reduced every 210,000 blocks (approximately 4 years)</li>
         </ul>
     </ul>
-    <figure><img alt="Bitcoin feedback cycle" src="assets/img/bitcoin_issuance_cycle.jpg" title="Bitcoin Issuance Schedule">
-    </figure>
+img: "bitcoin_issuance_cycle.jpg"
+imgAlt: "Bitcoin feedback cycle"
+imgTitle: "Bitcoin Issuance Schedule"
 ---
 

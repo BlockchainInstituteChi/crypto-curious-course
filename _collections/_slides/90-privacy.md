@@ -28,8 +28,8 @@ bodyText: |
             <li>Homomorphic Encryption</li>
         </ul>
     </ul>
-    <figure><img alt="Blockchain and privacy" src="assets/img/privacy.jpg" title="Privacy">
-        <figcaption></figcaption>
-    </figure>
+img: "privacy.jpg"
+imgAlt: "Blockchain and privacy" 
+imgTitle: "Privacy"
 ---
 

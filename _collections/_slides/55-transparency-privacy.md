@@ -11,7 +11,7 @@ notes: |
     <p>Every single person sending transactions via a blockchain has an address that is public to the entire network. This is the address someone would use if they wanted to send you cryptocurrency.</p>
     <p>Addresses are like a mailbox. Anyone can drop something in, only one person can take it out.</p>
     <p>Pseudonymous basically means partially anonymous. These addresses are long, jumbled strings of text, it has nothing to do with your name or identity. However, this doesn&apos;t make the network anonymous. Since everything is public, blockchain forensic experts have been able to trace bitcoin from address to address, ultimately identifying the group or individuals behind those addresses. It&apos;s not easy, but it certainly is not impossible.</p>
-body: | 
+bodyText: | 
     <ul>
         <li>Details are often public (i.e. to prevent double-spending)
             <ul>
@@ -30,7 +30,8 @@ body: |
             </ul>
         </li>
     </ul>
-    <figure><img alt="Privacy" src="assets/img/transparency_or_privacy.jpg" title="Transparency or Privacy?"></figure>
-        
+img: transparency_or_privacy.jpg"
+imgAlt: "Privacy"
+imgTitle: "Transparency or Privacy?"
 ---
 

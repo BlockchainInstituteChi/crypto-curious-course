@@ -27,8 +27,9 @@ bodyText: |
             <li>Decentralized exchanges</li>
         </ul>
     </ul>
-    <figure><img alt="Earning savings with Dai stablecoin" src="assets/img/dai_savings.png" title="Smart Contracts">
-        <figcaption><cite>Dai Savings Rate <a href="https://oasis.app/save">(oasis.app)</a></cite></figcaption>
-    </figure>
+img: "dai_savings.png"
+imgTitle: "Smart Contracts"
+imgAlt: "Earning savings with Dai stablecoin"
+imgCaption: "<cite>Dai Savings Rate <a href='https://oasis.app/save'>(oasis.app)</a></cite>"
 ---
 

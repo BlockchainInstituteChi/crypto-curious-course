@@ -15,7 +15,8 @@ bodyText: |
         <li>Governments</li>
         <li>Non-profits</li>
     </ul>
-    <figure><img alt="Conducting business" src="assets/img/blockchain_and_business.jpg" title="Blockchain and Business">
-    </figure>
+img: "blockchain_and_business.jpg"
+imgAlt: "Conducting business"
+imgTitle: "Blockchain and Business"
 ---
 
