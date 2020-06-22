@@ -26,7 +26,7 @@ body: |
                     <li>Sharding</li>
                 </ul>
             </ul>
-            <figure><img alt="Scaling dilemma" src="images/scaling.jpg" title="Scaling for Global Usage"></figure>
+            <figure><img alt="Scaling dilemma" src="assets/img/scaling.jpg" title="Scaling for Global Usage"></figure>
         
 ---
 

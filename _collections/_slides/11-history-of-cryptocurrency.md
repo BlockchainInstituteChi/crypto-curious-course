@@ -1,7 +1,7 @@
 --- 
 title: "The History of Cryptocurrency"
 slideId: "history-of-cryptocurrency"
-type: "default"
+type: "title"
 img: ""
 imgTitle: ""
 imgAlt: ""

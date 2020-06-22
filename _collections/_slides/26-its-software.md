@@ -11,6 +11,6 @@ notes: |
             <p>It&apos;s also important to know that there is no central Bitcoin company and there is no Bitcoin CEO. The software is open source and can be downloaded by anyone. Changes to the code in the Bitcoin software can be made by users and adopted by the network. This is what makes Bitcoin bailout-proof. Even if you wanted to &#x201C;bailout&#x201D; the network, it would be impossible. That&apos;s the nature of a decentralized project.</p>
         
 body: | 
-            <figure><img alt="Bitcoin is open-source software" src="images/its_all_virtual.jpg" title="It&apos;s All Virtual"></figure>
+            <figure><img alt="Bitcoin is open-source software" src="assets/img/its_all_virtual.jpg" title="It&apos;s All Virtual"></figure>
         
 ---

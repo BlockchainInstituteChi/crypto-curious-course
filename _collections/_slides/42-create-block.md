@@ -10,6 +10,6 @@ notes: |
             <p>Miners are racing to find the solution to an extremely tough equation, and the winner will write the next block, receiving compensation in the form of cryptocurrency. </p>
         
 body: | 
-            <figure><img alt="Valid blocks are added to the chain" src="images/create_block.jpg" title="Create Block"></figure>
+            <figure><img alt="Valid blocks are added to the chain" src="assets/img/create_block.jpg" title="Create Block"></figure>
         
 ---

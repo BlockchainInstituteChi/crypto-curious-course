@@ -11,6 +11,6 @@ notes: |
             <p>Who determines what transactions get included in a block? It&apos;s actually the miners who facilitate this process. Here&apos;s how the network makes a decision about what gets included inside of the next block. </p>
         
 body: | 
-            <figure><img alt="Decentralized network consensus" src="images/how_the_network_makes_a_decision.jpg" title="How the Network Makes a Decision"></figure>
+            <figure><img alt="Decentralized network consensus" src="assets/img/how_the_network_makes_a_decision.jpg" title="How the Network Makes a Decision"></figure>
         
 ---

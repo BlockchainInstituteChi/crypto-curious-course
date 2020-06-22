@@ -11,6 +11,6 @@ notes: |
             <p>This is the most secure way to store cryptocurrency. No one can get access to your cryptocurrency unless your private keys have been compromised. However, if you lose your paper wallet, those funds are lost as well, as the private key cannot be recovered.</p>
         
 body: | 
-            <figure><img alt="A Paper Wallet" src="images/paper_wallets.png" title="Paper Wallets"></figure>
+            <figure><img alt="A Paper Wallet" src="assets/img/paper_wallets.png" title="Paper Wallets"></figure>
         
 ---

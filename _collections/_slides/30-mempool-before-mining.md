@@ -11,6 +11,6 @@ notes: |
             <p>Essentially the mempool is a waiting room. Transactions have not yet been validated, nor has it been invalidated. These transactions just wait for their turn to be included into a block. </p>
         
 body: | 
-            <figure><img alt="Bitcoin mining" src="images/mempool.jpg" title="Mempool: Before Mining"></figure>
+            <figure><img alt="Bitcoin mining" src="assets/img/mempool.jpg" title="Mempool: Before Mining"></figure>
         
 ---

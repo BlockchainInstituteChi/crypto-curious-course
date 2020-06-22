@@ -17,6 +17,6 @@ notes: |
             <p>If computers are directly sending data between them (in this case sharing music files), there is no use for a central server to process (and collect) information. The processing duties that were filled by the central server are shared among the users of the network. Essentially, an egalitarian network of computers helps with governing the network. We&apos;ll get into that process in our next section.</p>
         
 body: | 
-            <figure><img alt="Centralized network" src="images/CentralServer.jpg" title="The Central Server"></figure>
+            <figure><img alt="Centralized network" src="assets/img/CentralServer.jpg" title="The Central Server"></figure>
         
 ---

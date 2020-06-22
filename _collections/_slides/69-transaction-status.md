@@ -17,7 +17,7 @@ body: |
                 <li>Insufficient fee or gas?</li>
                 <li>Check for your transaction ID on a public block explorer</li>
             </ul>
-            <figure><img alt="Look up a transaction ID on a block explorer" src="images/bitcoin-mempool.png" title="What Happened to My Transaction?">
+            <figure><img alt="Look up a transaction ID on a block explorer" src="assets/img/bitcoin-mempool.png" title="What Happened to My Transaction?">
                 <figcaption><cite><a href="https://tradeblock.com/bitcoin">Screenshot from TradeBlock</a></cite></figcaption>
             </figure>
         

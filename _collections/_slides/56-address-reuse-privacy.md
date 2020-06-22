@@ -12,6 +12,6 @@ notes: |
             <p>This might be a cumbersome annoying task, or more accurately it used to be. Individuals interested in maintaining more privacy when using bitcoin can use something called HD (hierarchical deterministic) wallets. This allows you to use a new address for every conducted transaction, all controlled by the same password.</p>
         
 body: | 
-            <figure><img alt="Different address for each transaction" src="images/address_reuse.jpg" title="Address Reuse and Privacy"></figure>
+            <figure><img alt="Different address for each transaction" src="assets/img/address_reuse.jpg" title="Address Reuse and Privacy"></figure>
         
 ---

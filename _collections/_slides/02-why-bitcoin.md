@@ -1,7 +1,7 @@
 --- 
 title: "Why Bitcoin"
 slideId: "why-bitcoin"
-type: "default"
+type: "title"
 img: ""
 imgTitle: ""
 imgAlt: ""

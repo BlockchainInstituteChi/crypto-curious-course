@@ -10,6 +10,6 @@ notes: |
             <p>Crypto markets are constructed like traditional markets. As traditional stocks can be traded in attempts to gain a profit, so can cryptocurrencies. Cryptocurrency exchanges work similar to stock trading platforms. Some day traders have even shifted towards cryptocurrency markets. We are currently seeing an institutionalization of cryptocurrency, with traditional financial entities adopting or accepting cryptocurrency. Major banks and investors have invested in cryptocurrency. There are also alternate markets that have arisen that have analogous counterparts in the stock market, such as a futures market. Bitcoin futures were first offered by CME and CBOE.</p>
         
 body: | 
-            <figure><img alt="Volatile cryptocurrency market" src="images/cryptocurrency_trading.jpg" title="Trading"></figure>
+            <figure><img alt="Volatile cryptocurrency market" src="assets/img/cryptocurrency_trading.jpg" title="Trading"></figure>
         
 ---

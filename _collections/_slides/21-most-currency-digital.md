@@ -12,6 +12,6 @@ notes: |
             <p>We&apos;ve already been using digital currency. Only 13 percent of all USD are represented with a physical note, the rest is just represented digitally in centralized ledgers controlled by banks. This is not endemic to the United States. Many fiat currencies are not backed by physical assets. The value has no physical representation, they are just numbers on a ledger&#x2026;.Sound familiar? </p>
         
 body: | 
-            <figure><img alt="Only 13% of all US currency is physical" src="images/most_money_is_already_digital.jpg" title="Most Money is Already Digital"></figure>
+            <figure><img alt="Only 13% of all US currency is physical" src="assets/img/most_money_is_already_digital.jpg" title="Most Money is Already Digital"></figure>
         
 ---

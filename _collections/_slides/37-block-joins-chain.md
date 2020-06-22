@@ -14,6 +14,6 @@ notes: |
             <p>Why wait for confirmations if the block has already been added to the chain? Well there&apos;s the slight possibility of the blockchain temporarily forking, trying to add two blocks at once. Eventually during the next few blocks, one chain will be built upon and the other will be sent back to a &quot;waiting room&quot; along with the transactions in the block formed by the miner who does not win the race. This is a rare occurrence, but definitely shows it&apos;s a good idea to wait for 6 confirmations when transacting with large values. Once a transaction has 6 confirmations, or 5 blocks after it, there&apos;s an astronomically high chance that the block is part of the correct chain.</p>
         
 body: | 
-            <figure><img alt="Block added to the chain" src="images/the_block_joins_the_chain.jpg" title="The Block Joins the Chain"></figure>
+            <figure><img alt="Block added to the chain" src="assets/img/the_block_joins_the_chain.jpg" title="The Block Joins the Chain"></figure>
         
 ---

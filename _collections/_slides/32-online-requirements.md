@@ -1,7 +1,7 @@
 --- 
 title: "Do you need to be online?"
 slideId: "online-requirements"
-type: "default"
+type: "title"
 img: ""
 imgTitle: ""
 imgAlt: ""

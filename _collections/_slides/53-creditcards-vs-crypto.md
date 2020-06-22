@@ -22,7 +22,7 @@ body: |
                 </li>
                 <li>Middleman fees</li>
             </ul>
-            <figure><img alt="Credit cards" src="images/creditcards_vs_cryptocurrency.jpg" title="Credit Cards vs. Cryptocurrency">
+            <figure><img alt="Credit cards" src="assets/img/creditcards_vs_cryptocurrency.jpg" title="Credit Cards vs. Cryptocurrency">
             </figure>
         
 ---

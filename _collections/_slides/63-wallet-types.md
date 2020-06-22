@@ -21,7 +21,7 @@ body: |
                     </ul>
                 </li>
             </ul>
-            <figure><img alt="Examples of physical cryptocurrency wallets" src="images/hardware_wallet_examples.jpg" title="Types of Cryptocurrency Wallets">
+            <figure><img alt="Examples of physical cryptocurrency wallets" src="assets/img/hardware_wallet_examples.jpg" title="Types of Cryptocurrency Wallets">
             </figure>
         
 ---

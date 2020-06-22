@@ -11,7 +11,7 @@ notes: |
             <p>This starts a unique repeating cycle that can be broken into four steps.</p>
         
 body: | 
-            <figure><img alt="Token creation cycle" src="images/token_creation_cycle.jpg" title="Token Creation Cycle">
+            <figure><img alt="Token creation cycle" src="assets/img/token_creation_cycle.jpg" title="Token Creation Cycle">
                 <figcaption>
                     (1) Create Block (2) Generate Cryptocurrency (3) Exchange for Resources (4) Collect Transaction Fees
                 </figcaption>

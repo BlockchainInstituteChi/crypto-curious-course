@@ -31,7 +31,7 @@ body: |
                     <li>Homomorphic Encryption</li>
                 </ul>
             </ul>
-            <figure><img alt="Blockchain and privacy" src="images/privacy.jpg" title="Privacy">
+            <figure><img alt="Blockchain and privacy" src="assets/img/privacy.jpg" title="Privacy">
                 <figcaption></figcaption>
             </figure>
         

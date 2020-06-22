@@ -13,6 +13,6 @@ notes: |
             <p>This is already happening with the onset of something called Decentralized Finance. Instead of ignoring this technology, banks are asking how they can adapt blockchain technology to fit their needs. We already talked about how long it takes to conduct a simple wire transfer compared to a cryptocurrency transaction. Banks have noticed and asked how they can use the technology for interbank settlement. It&apos;s currently relatively quick to make a transaction using bitcoin compared to a wire transfer, now banks are using blockchain technology in order to address this issue.</p>
         
 body: | 
-            <figure><img alt="Stacks of cash" src="images/banking.jpg" title="Banking"></figure>
+            <figure><img alt="Stacks of cash" src="assets/img/banking.jpg" title="Banking"></figure>
         
 ---

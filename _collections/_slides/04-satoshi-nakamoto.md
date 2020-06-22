@@ -13,6 +13,6 @@ notes: |
             <p>Since we have these posts and writings from Satoshi, we can infer a few things about his beliefs and motivations that led to him creating what would become cryptocurrency.</p>
         
 body: | 
-            <figure><img alt="Satoshi Nakamoto" src="images/satoshi_nakamoto.jpg" title="Satoshi Nakamoto"></figure>
+            <figure><img alt="Satoshi Nakamoto" src="assets/img/satoshi_nakamoto.jpg" title="Satoshi Nakamoto"></figure>
         
 ---

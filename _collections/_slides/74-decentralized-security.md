@@ -17,6 +17,6 @@ notes: |
             <p>Well, Decentralized networks look a lot like neighborhood B, while centralized networks look like neighborhood A. That really wealthy house? That&apos;s the central server that makes all of the decisions. Grab control of that and you have control of the network. To grab control of a decentralized network, you&apos;re going to have to hijack a majority of nodes.</p>
         
 body: | 
-            <figure><img alt="Centralized servers are vulnerable targets" src="images/decentralized_security.jpg" title="Decentralized Security"></figure>
+            <figure><img alt="Centralized servers are vulnerable targets" src="assets/img/decentralized_security.jpg" title="Decentralized Security"></figure>
         
 ---

@@ -10,6 +10,6 @@ notes: |
             <p>Once the transaction is initiated, it is broadcast to the nodes on the network. At this point the miners race to put transactions into a block, but blocks have data size limits and can only hold so much transaction data. A large amount of transactions congesting the network might mean that your transaction doesn&apos;t get included in this first block that is created but will eventually be included in a subsequent block. So what happens in this waiting period between broadcasting and mining?</p>
         
 body: | 
-            <figure><img alt="Broadcasting the transaction" src="images/broadcasting_the_transaction.jpg" title="Broadcasting the Transaction"></figure>
+            <figure><img alt="Broadcasting the transaction" src="assets/img/broadcasting_the_transaction.jpg" title="Broadcasting the Transaction"></figure>
         
 ---

@@ -10,6 +10,6 @@ notes: |
             <p>Software wallets are free, downloadable software that you can use as your cryptocurrency wallet. You are provided a key-pair upon download. These hot wallets are great for transactability and everyday spending. You&apos;re even able to download a cryptocurrency wallet to your mobile phone!</p>
         
 body: | 
-            <figure><img alt="Bitcoin and Ethereum in a traditional wallet" src="images/software_wallets.jpg" title="Software Wallets"></figure>
+            <figure><img alt="Bitcoin and Ethereum in a traditional wallet" src="assets/img/software_wallets.jpg" title="Software Wallets"></figure>
         
 ---

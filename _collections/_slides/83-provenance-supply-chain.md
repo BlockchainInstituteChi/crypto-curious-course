@@ -13,6 +13,6 @@ notes: |
             <p>This technology has the potential to impact the supply chain, whether it be fighting food fraud, or enforcing fair trade policies. Immutable digital receipts can be used to settle many disputes.</p>
         
 body: | 
-            <figure><img alt="Supply Chain" src="images/supply_chain.jpg" title="Provenance/Supply Tracking"></figure>
+            <figure><img alt="Supply Chain" src="assets/img/supply_chain.jpg" title="Provenance/Supply Tracking"></figure>
         
 ---

@@ -13,7 +13,7 @@ notes: |
             <p>This creates a domino effect of securities grouping together unrelated investments which made sure the house came tumbling down at the first sign of trouble. Investment banks began to fail, the stock market acted accordingly. Savings disappeared causing widespread panic. </p>
         
 body: | 
-            <figure><img alt="Shock Market" src="images/subprime_mortgage_crisis.jpg" title="Subprime Mortgage Crisis">
+            <figure><img alt="Shock Market" src="assets/img/subprime_mortgage_crisis.jpg" title="Subprime Mortgage Crisis">
                 <figcaption><cite>Front Page of <a href="https://www.wsj.com/">(The Wall Street Journal)</a> and <a href="https://www.nydailynews.com/">(Daily News)</a></cite></figcaption>
             </figure>
         

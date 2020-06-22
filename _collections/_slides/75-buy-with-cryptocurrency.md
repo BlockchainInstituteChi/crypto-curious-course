@@ -1,7 +1,7 @@
 --- 
 title: "What You Can Do With Cryptocurrency"
 slideId: "buy-with-cryptocurrency"
-type: "default"
+type: "title"
 img: ""
 imgTitle: ""
 imgAlt: ""

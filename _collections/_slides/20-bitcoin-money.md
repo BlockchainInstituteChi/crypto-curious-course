@@ -1,7 +1,7 @@
 --- 
 title: "Bitcoin As Money"
 slideId: "bitcoin-money"
-type: "default"
+type: "title"
 img: ""
 imgTitle: ""
 imgAlt: ""

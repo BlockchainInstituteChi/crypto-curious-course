@@ -13,6 +13,6 @@ notes: |
             <p>The problem with these early digital currency projects was that they could not sufficiently put all of these innovations together, it was Bitcoin that did that. Many of these organizations also had another thing in common. They had a level of centrality where the government could shut them down. </p>
         
 body: | 
-            <figure><img alt="Early digital currency projects" src="images/digital_currency_experiments.jpg" title="Digital Currency Experiments"></figure>
+            <figure><img alt="Early digital currency projects" src="assets/img/digital_currency_experiments.jpg" title="Digital Currency Experiments"></figure>
         
 ---

@@ -17,7 +17,7 @@ body: |
                         <li>Bitcoin introduced 10 minute block times, a huge improvement from 3 day bank transfers</li>
                         <li>Blockchain innovation has pushed block times down to seconds</li>
                     </ul>
-                    <figure><img alt="Hashrate and difficulty compared" src="images/mining_difficulty.png" title="Transaction Time">
+                    <figure><img alt="Hashrate and difficulty compared" src="assets/img/mining_difficulty.png" title="Transaction Time">
                         <figcaption><cite>Hashrate and Difficulty Compared<a href="https://www.blockchain.com/charts#mining">(blockchain.com)</a></cite></figcaption>
                     </figure>
                 

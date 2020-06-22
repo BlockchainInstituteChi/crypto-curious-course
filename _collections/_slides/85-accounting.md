@@ -11,6 +11,6 @@ notes: |
             <p>Transparency expedites assurance. All federal income taxes are self-reporting, meaning that you have to figure out how much you owe or are owed. It&apos;s a backwards system where the government kind of knows how much you owe, makes you figure out that amount, and then makes sure you&apos;re correct. A set of ordered digital records on a decentralized network could add transparency to taxation that could essentially upend how you pay taxes. If digitally unique records are constantly updated, as opposed to reported once a year, tax settlement could occur more often, making triple-entry accounting a possible solution to expediting the taxation process.</p>
         
 body: | 
-            <figure><img alt="Accounting spreadsheet" src="images/accounting.jpg" title="Accounting"></figure>
+            <figure><img alt="Accounting spreadsheet" src="assets/img/accounting.jpg" title="Accounting"></figure>
         
 ---

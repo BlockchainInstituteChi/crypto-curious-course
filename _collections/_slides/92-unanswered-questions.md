@@ -1,3 +1,4 @@
+
 ---
 title: "Unanswered Questions"
 slideId: "unanswered-questions"
@@ -26,7 +27,7 @@ body: |
                     <li>Is this data useful/needed forever?</li>
                 </ul>
             </ul>
-            <figure><img alt="Dilbert blockchain comic" src="images/unanswered_questions_dilbert.png" title="Unanswered Questions">
+            <figure><img alt="Dilbert blockchain comic" src="assets/img/unanswered_questions_dilbert.png" title="Unanswered Questions">
                 <figcaption><cite>Blockchain Comic <a href="https://dilbert.com/">(dilbert.com)</a></cite></figcaption>
         </figure>
 ---

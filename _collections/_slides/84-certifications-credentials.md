@@ -15,6 +15,6 @@ notes: |
             <p>References can be logged, creating a digitally unique profile of each author&apos;s works.</p>
         
 body: | 
-            <figure><img alt="Blockchain records of professional certifications" src="images/certifications_and_credentials.jpg" title="Certifications and Credentials"></figure>
+            <figure><img alt="Blockchain records of professional certifications" src="assets/img/certifications_and_credentials.jpg" title="Certifications and Credentials"></figure>
         
 ---

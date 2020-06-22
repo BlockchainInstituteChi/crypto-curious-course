@@ -1,6 +1,9 @@
 ---
-title: Full CCC Instructors Guide
+title: CCC Instructors Guide
 layout: teachers-guide
+ogTitle: Crypto Curious Teacher's Guide
+ogImage: assets/img/CCC_Title.jpeg
+ogDesc: Become a blockchain ambassador today!
 ---
 
  <a href="#top"><img src="assets/img/UPbutton-01.png" id="fixedbutton"></a>
@@ -62,9 +65,13 @@ layout: teachers-guide
 {% assign sorted = site.slides | sort: 'slideId' %}
 {% for slide in site.slides %}
 
-	{% if slide.type == "title" %}
-		{% include titleSlide.html 
-			slideId=slide.slideId
+    {% if slide.type == "title" %}
+        <span>FUCCCKKKKK {{ slide.img }}</span>
+		{% include defaultSlide.html 
+            slideId=slide.slideId
+            img=slide.img
+            imgAlt=slide.imgAlt
+            imgTitle=slide.imgTitle
 			title=slide.title
 			notes=slide.notes
 		%}

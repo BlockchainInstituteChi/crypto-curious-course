@@ -11,6 +11,6 @@ notes: |
             <p>This idea of a digital currency was explored in coming decades, which would ultimately lead to the creation of Bitcoin.</p>
         
 body: | 
-            <figure><img alt="Error 402 payment required" src="images/cash_for_the_internet.jpg" title="Cash for the Internet"></figure>
+            <figure><img alt="Error 402 payment required" src="assets/img/cash_for_the_internet.jpg" title="Cash for the Internet"></figure>
         
 ---

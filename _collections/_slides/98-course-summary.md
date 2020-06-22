@@ -26,7 +26,7 @@ body: |
                 <li>Define cryptocurrency and how it&apos;s different than traditional money</li>
                 <li>How blockchain may impact the world</li>
             </ul>
-            <figure><img alt="Course Goals" src="images/course_goals.png" title="Course Goals"></figure>
+            <figure><img alt="Course Goals" src="assets/img/course_goals.png" title="Course Goals"></figure>
         
 ---
 

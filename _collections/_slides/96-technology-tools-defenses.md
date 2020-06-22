@@ -15,7 +15,7 @@ body: |
                 <li>Defend our freedoms to transact value directly</li>
                 <li>Cryptography as digital armor</li>
             </ul>
-            <figure><img alt="Decentralized Index Aggregator" src="images/1inch-exchange.png" title="Technological Tools">
+            <figure><img alt="Decentralized Index Aggregator" src="assets/img/1inch-exchange.png" title="Technological Tools">
                 <figcaption><cite>DEX Aggregator <a href="https://1inch.exchange/">(1inch.exchange)</a></cite></figcaption>
             </figure>
         

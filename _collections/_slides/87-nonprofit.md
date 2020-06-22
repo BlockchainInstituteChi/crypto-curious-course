@@ -11,6 +11,6 @@ notes: |
             <p>If you donate to an organization, often you don&apos;t know how funds are spent. Blockchains create a digital record of where that money is donated, and where it is ultimately moved and spent. Charities can provide transparency by selectively moving their funds to designated wallets that can be &#x201C;earmarked&#x201D; for specific products. Since public blockchains are transparent, the wallets spending would be open to scrutiny. The transparency of a decentralized network can greatly limit fraud and misuse of funds.</p>
         
 body: | 
-            <figure><img alt="Transparency for non-profit resources" src="images/nonprofit.jpg" title="Non-profit"></figure>
+            <figure><img alt="Transparency for non-profit resources" src="assets/img/nonprofit.jpg" title="Non-profit"></figure>
         
 ---

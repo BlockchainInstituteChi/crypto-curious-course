@@ -15,7 +15,7 @@ body: |
                 <li>Consider cost of maintanance and management</li>
                 <li>More cost effective to buy Bitcoin directly than converting electricity</li>
             </ul>
-            <figure><img alt="Mining profitability" src="images/is_mining_profitable.jpg" title="Mining Profitability / Is It Worth It?">
+            <figure><img alt="Mining profitability" src="assets/img/is_mining_profitable.jpg" title="Mining Profitability / Is It Worth It?">
             </figure>
         
 ---

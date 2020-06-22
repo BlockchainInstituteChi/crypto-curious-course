@@ -1,7 +1,7 @@
 --- 
 title: "The Transaction Process"
 slideId: "bitcoin-transaction-process"
-type: "default"
+type: "title"
 img: ""
 imgTitle: ""
 imgAlt: ""

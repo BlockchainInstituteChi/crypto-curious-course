@@ -1,7 +1,7 @@
 --- 
 title: "Keeping Crypto Secure"
 slideId: "keeping-crypto-secure"
-type: "default"
+type: "title"
 img: ""
 imgTitle: ""
 imgAlt: ""

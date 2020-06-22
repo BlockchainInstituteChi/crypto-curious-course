@@ -12,6 +12,6 @@ notes: |
             <p>The effort to gain as much processing power as possible has made it difficult for the average person to compete against these miners with significant hashing power. This has led to the formation of mining pools, where individuals pool their hashing power together in the hopes of winning more block rewards and competing with larger mining operations. The reward distribution usually corresponds with the amount of hashing power provided to the pool.</p>
         
 body: | 
-            <figure><img alt="Mining mechanics" src="images/which_transactions_are_included.jpg" title="Which Transactions are Included?"></figure>
+            <figure><img alt="Mining mechanics" src="assets/img/which_transactions_are_included.jpg" title="Which Transactions are Included?"></figure>
         
 ---

@@ -12,6 +12,6 @@ notes: |
             <p>It is extremely important to keep your seed phrase safe, as it can be used to back-up and restore your cryptocurrency.</p>
         
 body: | 
-            <figure><img alt="Seed phrase card" src="images/seed_phrases.png" title="Seed Phrase"></figure>
+            <figure><img alt="Seed phrase card" src="assets/img/seed_phrases.png" title="Seed Phrase"></figure>
         
 ---

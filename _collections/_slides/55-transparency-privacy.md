@@ -34,7 +34,7 @@ body: |
                     </ul>
                 </li>
             </ul>
-            <figure><img alt="Privacy" src="images/transparency_or_privacy.jpg" title="Transparency or Privacy?"></figure>
+            <figure><img alt="Privacy" src="assets/img/transparency_or_privacy.jpg" title="Transparency or Privacy?"></figure>
         
 ---
 

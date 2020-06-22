@@ -17,7 +17,7 @@ body: |
                 <li>Medium of Exchange</li>
                 <li>Unit of Accounts</li>
             </ul>
-            <figure><img alt="3D printed bitcoin" src="images/the_functions_of_money.jpg" title="The Functions of Money">
+            <figure><img alt="3D printed bitcoin" src="assets/img/the_functions_of_money.jpg" title="The Functions of Money">
             </figure>
         
 ---

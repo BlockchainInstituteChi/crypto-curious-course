@@ -1,7 +1,7 @@
 --- 
 title: "Mining Mechanics"
 slideId: "mining-mechanics"
-type: "default"
+type: "title"
 img: ""
 imgTitle: ""
 imgAlt: ""

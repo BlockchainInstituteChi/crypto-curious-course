@@ -1,7 +1,7 @@
 --- 
 title: "Inspecting a Transaction"
 slideId: "inspecting-transaction"
-type: "default"
+type: "title"
 img: ""
 imgTitle: ""
 imgAlt: ""

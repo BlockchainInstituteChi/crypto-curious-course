@@ -16,6 +16,6 @@ notes: |
             </ul>
         
 body: | 
-            <figure><img alt="Personal data is being harvested" src="images/modern_challenges.jpg" title="Modern Challenges"></figure>
+            <figure><img alt="Personal data is being harvested" src="assets/img/modern_challenges.jpg" title="Modern Challenges"></figure>
         
 ---

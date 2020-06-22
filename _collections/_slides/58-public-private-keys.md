@@ -12,6 +12,6 @@ notes: |
             <p>The best real world analogy is that of a locked mailbox. Everyone has access to your address, just like with a public key. Anybody can drop a message or funds in your mailbox, but only you have access to the key that opens the mailbox. This key is analogous to a private key. </p>
         
 body: | 
-            <figure><img alt="Public and private keys" src="images/public_and_private_keys.jpg" title="Public and Private Keys"></figure>
+            <figure><img alt="Public and private keys" src="assets/img/public_and_private_keys.jpg" title="Public and Private Keys"></figure>
         
 ---

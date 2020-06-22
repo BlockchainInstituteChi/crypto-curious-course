@@ -15,7 +15,7 @@ body: |
                 <li>Instagram: <a href="https://www.instagram.com/theblockchaininstitute/" target="_blank">theblockchaininstitute</a></li>
             </ul>
             <p>Apply to become a <a href="https://weteachblockchain.org/ambassadors/" target="_blank">Blockchain Ambassador!</a></p>
-            <figure><img alt="Blockchain Institute" src="images/housekeeping.jpg" title="How To Join Us"></figure>
+            <figure><img alt="Blockchain Institute" src="assets/img/housekeeping.jpg" title="How To Join Us"></figure>
         
 ---
 

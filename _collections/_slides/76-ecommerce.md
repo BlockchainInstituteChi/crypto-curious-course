@@ -13,6 +13,6 @@ notes: |
             <p>A great example of a cryptocurrency that is suited for the way content is consumed is BAT, or basic attention token. Instead of watching boring mandatory ads, you are rewarded for your attention by participating in interactive ads. The really cool part about BAT is it&apos;s already being used to tip independent creators that are beholden to platform restrictions. This also allows for all of the proceeds to go directly to the creator instead of a third party.</p>
         
 body: | 
-            <figure><img alt="Add to Cart" src="images/ecommmerce.jpg" title="E-commerce"></figure>
+            <figure><img alt="Add to Cart" src="assets/img/ecommmerce.jpg" title="E-commerce"></figure>
         
 ---

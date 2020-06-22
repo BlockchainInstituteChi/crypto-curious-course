@@ -1,7 +1,7 @@
 --- 
 title: "The Problem Bitcoin Solves"
 slideId: "bitcoin-solved-problems"
-type: "default"
+type: "title"
 img: ""
 imgTitle: ""
 imgAlt: ""

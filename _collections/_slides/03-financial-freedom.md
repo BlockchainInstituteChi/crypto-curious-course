@@ -17,7 +17,7 @@ notes: |
             <p>2017 was a huge year for cryptocurrencies, as the price of these assets rapidly increased. Many people rushed to buy cryptocurrency, but some buyers found out that purchasing these cryptocurrencies could result in your bank account being shut down. Many purchases were just simply rejected. Buying cryptocurrency was perfectly legal, but banks treated that activity as forbidden. This wasn&apos;t simply because of legal liability, but rather a form of protectionism by the industry that cryptocurrency aimed to disrupt.</p>
         
 body: | 
-            <figure><img alt="Bitcoin, Ethereum and Litecoin tokens" src="images/financial_freedom.jpg" title="Financial Freedom">
+            <figure><img alt="Bitcoin, Ethereum and Litecoin tokens" src="assets/img/financial_freedom.jpg" title="Financial Freedom">
                 <figcaption>Bitcoin can&apos;t be bailed out.</figcaption>
             </figure>
         

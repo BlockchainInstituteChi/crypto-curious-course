@@ -19,7 +19,7 @@ body: |
                 <li>10,000 BTC for 2 pizzas</li>
                 <li>First recorded use of bitcoin to purchase a good</li>
             </ul>
-            <figure><img alt="Bitcoin price chart showing when the pizza transaction took place" src="images/bitcoin_pizza_day_2.jpg" title="Early Bitcoin Use">
+            <figure><img alt="Bitcoin price chart showing when the pizza transaction took place" src="assets/img/bitcoin_pizza_day_2.jpg" title="Early Bitcoin Use">
             </figure>
         
 ---

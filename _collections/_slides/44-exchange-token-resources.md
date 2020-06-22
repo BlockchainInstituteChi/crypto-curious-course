@@ -10,6 +10,6 @@ notes: |
             <p>At this point, some coins are held for future spending or speculations. These coins leave this feedback cycle. However, many miners look to sell their rewarded cryptocurrency in order to offset their energy costs, or even to make a profit. These miners put their cryptocurrency on the market, generating more transactions. </p>
         
 body: | 
-            <figure><img alt="Miners sell block rewards to cover costs" src="images/exchange_tokens_for_resources.jpg" title="Exchange Tokens for Resources"></figure>
+            <figure><img alt="Miners sell block rewards to cover costs" src="assets/img/exchange_tokens_for_resources.jpg" title="Exchange Tokens for Resources"></figure>
         
 ---

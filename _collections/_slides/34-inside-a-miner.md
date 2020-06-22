@@ -12,6 +12,6 @@ notes: |
             <p>All of these parts can be purchased by anyone who wants to build one. Nothing is special or privileged, and everything is entirely accessible and open source. The price tag of a machine like this is quite low, so anyone who wants to participate can buy their own machine and flash it with whatever mining software they want (which can be downloaded for free online).</p>
         
 body: | 
-            <figure><img alt="Deconstructed mini-miner" src="images/inside_a_mini_miner.jpg" title="Inside a Mini-Miner"></figure>
+            <figure><img alt="Deconstructed mini-miner" src="assets/img/inside_a_mini_miner.jpg" title="Inside a Mini-Miner"></figure>
         
 ---

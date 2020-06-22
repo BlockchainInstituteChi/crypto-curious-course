@@ -1,7 +1,7 @@
 --- 
 title: "But Still Worth Using!"
 slideId: "worth-using"
-type: "default"
+type: "title"
 img: ""
 imgTitle: ""
 imgAlt: ""

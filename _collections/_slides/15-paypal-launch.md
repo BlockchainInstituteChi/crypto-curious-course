@@ -11,6 +11,6 @@ notes: |
             <p>They got beat by PayPal, a centralized application that became a top way to digitally transfer money without directly using banks.</p>
         
 body: | 
-            <figure><img alt="PayPal" src="images/1998_paypal_founded.jpg" title="1998: Paypal Launched"></figure>
+            <figure><img alt="PayPal" src="assets/img/1998_paypal_founded.jpg" title="1998: Paypal Launched"></figure>
         
 ---

@@ -11,7 +11,7 @@ notes: |
         
 body: | 
             <figure>
-                <img alt="Transaction added to a block" src="images/inclusion_in_a_block.jpg" title="Inclusion in a Block">
+                <img alt="Transaction added to a block" src="assets/img/inclusion_in_a_block.jpg" title="Inclusion in a Block">
             </figure>
         
 ---

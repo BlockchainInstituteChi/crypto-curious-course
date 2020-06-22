@@ -11,6 +11,6 @@ notes: |
             <p>The transferer utilizes their cryptographic password in order to sign-off on the transaction, sending it to a specified member of the network. The transaction cannot start without this process. Since a cryptographically derived password, or private key, is signing the message, you can be assured that the true holder of the cryptocurrency is actually sending the transaction. </p>
         
 body: | 
-            <figure><img alt="Data signing" src="images/data_signing.jpg" title="Data Signing"></figure>
+            <figure><img alt="Data signing" src="assets/img/data_signing.jpg" title="Data Signing"></figure>
         
 ---

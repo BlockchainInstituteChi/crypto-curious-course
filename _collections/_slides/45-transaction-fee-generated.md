@@ -11,6 +11,6 @@ notes: |
             <p>Once the maximum allotment of bitcoin is reached, Satoshi anticipated that transaction fees would pay for miner work after there are no more block rewards introducing new crypto into the ecosystem. </p>
         
 body: | 
-            <figure><img alt="Miners selling generates more fees" src="images/transaction_fees_generated.jpg" title="Transaction Fees Generated"></figure>
+            <figure><img alt="Miners selling generates more fees" src="assets/img/transaction_fees_generated.jpg" title="Transaction Fees Generated"></figure>
         
 ---

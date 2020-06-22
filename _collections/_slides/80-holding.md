@@ -1,3 +1,4 @@
+
 --- 
 title: "HODLing"
 slideId: "holding"
@@ -12,6 +13,6 @@ notes: |
             <p>The misspelling of the term first caught steam on a Bitcoin related forum. At the time of the post, Bitcoin&apos;s price had gone down significantly for that relative time period. One user went on an epic rant, using the term &#x201C;hodl&#x201D; attached to the sentiment of weathering the hard times. The post went viral within the community, and soon embedded itself in the cryptocurrency lexicon. It became a rallying cry when crypto was having more downs than ups. It is still a popular meme used today.</p>
         
 body: | 
-            <figure><img alt="HODLing bitcoin " src="images/hodling.jpg" title="HODLing">
+            <figure><img alt="HODLing bitcoin " src="assets/img/hodling.jpg" title="HODLing">
         </figure>
 ---

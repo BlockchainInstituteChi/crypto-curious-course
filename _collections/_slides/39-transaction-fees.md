@@ -13,6 +13,6 @@ notes: |
             <p>Eventually, all of the bitcoin will be minted. After block production rewards end, fees will cover the costs of running the network.</p>
         
 body: | 
-            <figure><img alt="Transaction fees" src="images/transaction_fees.jpg" title="Transaction Fees"></figure>
+            <figure><img alt="Transaction fees" src="assets/img/transaction_fees.jpg" title="Transaction Fees"></figure>
         
 ---

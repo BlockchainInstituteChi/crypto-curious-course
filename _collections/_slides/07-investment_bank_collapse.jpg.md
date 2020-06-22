@@ -10,7 +10,7 @@ notes: |
             <p>These co-mingling activities led to a tenuous economic situation which would lead to the global financial crisis just eight years later. Investment banks started going under, starting with Lehmann Brothers. Many other investment banks followed suit, collapsing the economy in terrible fashion. </p>
         
 body: | 
-            <figure><img alt="Breaking News CNN Lehman Brothers Bankrupt" src="images/investment_bank_collapse.jpg" title="Investment Bank Collapse">
+            <figure><img alt="Breaking News CNN Lehman Brothers Bankrupt" src="assets/img/investment_bank_collapse.jpg" title="Investment Bank Collapse">
                 <figcaption><cite>Breaking News from<a href="https://www.cnn.com/">(CNN)</a></cite></figcaption>
             </figure>
         

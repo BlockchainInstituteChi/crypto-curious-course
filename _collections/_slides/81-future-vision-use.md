@@ -1,7 +1,7 @@
 --- 
 title: "Future Vision and Blockchain Use Cases "
 slideId: "future-vision-use"
-type: "default"
+type: "title"
 img: ""
 imgTitle: ""
 imgAlt: ""

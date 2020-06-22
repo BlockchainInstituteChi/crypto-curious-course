@@ -10,6 +10,6 @@ notes: |
             <p>There are certain incentives ingrained in the blockchain protocols in order to help ensure that nodes do not act maliciously. The most obvious example is the block reward, which incentivizes miners to work to secure the network by offering up a block reward to the winner. Another incentive mechanism is the cost that it takes to attack the network in hopes of taking it over. A lot of computing power is required. It is likely more advantageous to play by the rules and use that computing power for mining, reaping the block rewards as opposed to completely undermining the cryptocurrency&apos;s economy.</p>
         
 body: | 
-            <figure><img alt="Protocol incentives users and discourages bad behavior" src="images/incentive_engineering.jpg" title="Incentive Engineering"></figure>
+            <figure><img alt="Protocol incentives users and discourages bad behavior" src="assets/img/incentive_engineering.jpg" title="Incentive Engineering"></figure>
         
 ---

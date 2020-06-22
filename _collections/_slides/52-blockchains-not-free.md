@@ -16,7 +16,7 @@ body: |
                 <li>This reduces spam, otherwise blockchains would become overrun like email</li>
                 <li>Freedom of speech</li>
             </ul>
-            <figure><img alt="Ethereum gas prices" src="images/gas_price.png" title="Why Blockchains Aren&apos;t Free">
+            <figure><img alt="Ethereum gas prices" src="assets/img/gas_price.png" title="Why Blockchains Aren&apos;t Free">
                 <figcaption><cite>Ethereum Gas Prices <a href="https://ethgasstation.info/">(ethgasstation.info)</a></cite></figcaption>
             </figure>
         

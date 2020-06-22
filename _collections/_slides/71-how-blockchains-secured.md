@@ -1,7 +1,7 @@
 --- 
 title: "How Blockchains Are Secured"
 slideId: "how-blockchains-secured"
-type: "default"
+type: "title"
 img: ""
 imgTitle: ""
 imgAlt: ""

@@ -1,7 +1,7 @@
 --- 
 title: "Blockchains are not Perfect"
 slideId: "blockchains-imperfect"
-type: "default"
+type: "title"
 img: ""
 imgTitle: ""
 imgAlt: ""

@@ -11,6 +11,6 @@ notes: |
             <p>Bitcoin is a borderless global currency, so no conversion is needed when traveling. There are many examples of content creators using only cryptocurrency to travel internationally. Surprisingly, most are able to easily accomplish this by finding a few merchants willing to accept bitcoin and other cryptocurrency.</p>
         
 body: | 
-            <figure><img alt="Cryptocurrency does not care about borders" src="images/money_without_borders.jpg" title="Money Without Borders"></figure>
+            <figure><img alt="Cryptocurrency does not care about borders" src="assets/img/money_without_borders.jpg" title="Money Without Borders"></figure>
         
 ---

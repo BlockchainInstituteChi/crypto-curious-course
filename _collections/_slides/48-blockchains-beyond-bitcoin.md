@@ -34,7 +34,7 @@ body: |
                     <li>Ethereum</li>
                 </ul>
             </ul>
-            <figure><img alt="Other blockchains including Ethereum, Mastercoin, Litecoin and Namecoin" src="images/blockchains_beyond_bitcoin.jpg" title="Blockchains Beyond Bitcoin">
+            <figure><img alt="Other blockchains including Ethereum, Mastercoin, Litecoin and Namecoin" src="assets/img/blockchains_beyond_bitcoin.jpg" title="Blockchains Beyond Bitcoin">
             </figure>
         
 ---

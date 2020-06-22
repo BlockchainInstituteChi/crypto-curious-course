@@ -51,7 +51,7 @@ h4 {
 
 /* slideshow formatting */
 article {
-    background: url(../images/BlockchainInstitute_Logo_COLOR.png) no-repeat;
+    background: url(../assets/img/BlockchainInstitute_Logo_COLOR.png) no-repeat;
     background-position: top 1.5em right 1em;
     background-size: 100px;
     border: 5px solid #efefef;
@@ -162,7 +162,7 @@ article.title-break header {
 }
 
 article.title-break>div {
-    background: url(../images/blue-background.png) center;
+    background: url(../assets/img/blue-background.png) center;
     background-size: contain;
     min-height: 350px;
 }
@@ -192,7 +192,7 @@ article.full-image>div>figure>img {
 }
 
 article.prompt-question>div {
-    background: url(../images/background-pink.png) center;
+    background: url(../assets/img/background-pink.png) center;
     background-size: contain;
     min-height: 350px;
 }

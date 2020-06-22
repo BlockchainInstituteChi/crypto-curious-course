@@ -1,7 +1,7 @@
 --- 
 title: "Programmable Money"
 slideId: "programmable-money"
-type: "default"
+type: "title"
 img: ""
 imgTitle: ""
 imgAlt: ""

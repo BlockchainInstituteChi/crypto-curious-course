@@ -10,6 +10,6 @@ notes: |
             <p>A pivotal moment in Bitcoin&apos;s history was when the first recorded good was paid for using cryptocurrency. And as you might have guessed, it was a pizza. Two pizzas to be exact.</p>
         
 body: | 
-            <figure><img alt="Bitcoin and pizza" src="images/bitcoin_pizza_day.jpg" title="Bitcoin Pizza Day"></figure>
+            <figure><img alt="Bitcoin and pizza" src="assets/img/bitcoin_pizza_day.jpg" title="Bitcoin Pizza Day"></figure>
         
 ---

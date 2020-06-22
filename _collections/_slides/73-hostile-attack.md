@@ -16,7 +16,7 @@ body: |
                 <li>Controlling majority hash power could allow re-writing of historical chain data</li>
                 <li>Important to ensure diversity of network participants while maintaining incentive alignment</li>
             </ul>
-            <figure><img alt="Mining power can be bought" src="images/mining_farm.png" title="51% Attack: Controlling A Network">
+            <figure><img alt="Mining power can be bought" src="assets/img/mining_farm.png" title="51% Attack: Controlling A Network">
                 <figcaption><sup>Mining Facility (<a href="https://en.bitcoinwiki.org/wiki/Main_Page" target="_blank">bitcoinwiki.org</a>)</sup></figcaption>
             </figure>
         

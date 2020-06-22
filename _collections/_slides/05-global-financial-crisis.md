@@ -15,7 +15,7 @@ notes: |
             <p>What can we tell from this message? Well, it isn&apos;t a stretch to think that the response to the global financial crisis had something to do with Bitcoin&apos;s birth. </p>
         
 body: | 
-            <figure><img alt="Front page of The Times newspaper" src="images/2008_2009.jpg" title="2008-2009">
+            <figure><img alt="Front page of The Times newspaper" src="assets/img/2008_2009.jpg" title="2008-2009">
                 <figcaption><cite>Front Page of <a href="https://www.thetimes.co.uk/">(The Times)</a></cite></figcaption>
             </figure>
         

@@ -15,6 +15,6 @@ notes: |
             <p>Miners decide who has what when by compiling transactions into a data holding &#x201C;vehicle&#x201D; known as a block. Simply put, blocks are the things that hold batches of transactions. These miners are racing to form a block by solving a really tough math problem (one that takes these powerful computers an average of 10 minutes to solve) in order to get the right to compile transactions into a block. Why are they racing for the right to compile the next block? The winner of this mathematical race that puts forward a block full of valid transactions that gets added to the chain is compensated with what&apos;s known as a block reward, and today that reward is 6.25 bitcoin per block.</p>
         
 body: | 
-            <figure><img alt="Decentralized network " src="images/the_decentralized_network.jpg" title="Decentralized Network"></figure>
+            <figure><img alt="Decentralized network " src="assets/img/the_decentralized_network.jpg" title="Decentralized Network"></figure>
         
 ---
