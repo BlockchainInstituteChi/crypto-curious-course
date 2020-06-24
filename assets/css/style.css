@@ -603,3 +603,35 @@ article#title-slide {
 div#license {
   margin-bottom: 3em;
 }
+
+/* Notes Toggling */
+.hidden {
+  display: none;
+}
+.notesToggleButton {
+  color: blue;
+  margin-right: 1em;
+  position: relative;
+  margin-top: -2em;
+  float: right;
+  display: block;
+}
+.notesDisclaimer {
+  background: #03bed3;
+  border-radius: 4px;
+  color: #4c4242;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-family: kanit;
+}
+.notesDisclaimer a {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  float: right;
+  margin-top: 0.05em;
+  display: block;
+}

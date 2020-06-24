@@ -5,7 +5,10 @@
     <div>
         {{ include.content }}   
     </div>
-    <footer>
+    {% include toggleNotesButton.html
+        slideId = include.slideId
+    %}
+    <footer class="notes-footer" id="{{ include.slideId }}-notes">
         {{ include.notes }}
     </footer>
 </article>

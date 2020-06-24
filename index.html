@@ -62,6 +62,12 @@ ogDesc: Become a blockchain ambassador today!
 
         </ol>
     </div>       
+
+    <div class="notesDisclaimer">
+        <span>The slides below show the slide first, with notes below it. To see the slides only, click the button below.</span>
+        <a onclick="toggleAllNotes()">Toggle Notes</a>
+    </div>
+
 {% assign sorted = site.slides | sort: 'slideId' %}
 {% for slide in site.slides %}
     {% if slide.type == "title-break" %}
@@ -136,3 +142,36 @@ ogDesc: Become a blockchain ambassador today!
 	{% endif %}
 
 {% endfor %}
+
+<script>
+function toggleAllNotes () {
+    var allNotes = document.getElementsByClassName('notes-footer')
+
+    // key off the first one to set the mode:
+    if ( allNotes[0].className.includes('hidden') ) {
+        // first one is hidden, so all should be displayed 
+        for (note of allNotes) {
+            note.className = note.className.replace('hidden', '')
+        }
+    } else {
+        // first one is not hidden, so all should be hidden
+        for (note of allNotes) {
+            if ( note.className.includes('hidden') ) {
+                // already hidden, do nothing
+            } else {
+                note.className += " hidden"
+            }
+        }
+    }
+}
+
+function toggleNotes (slideId) {
+    var slideNotes = document.getElementById(slideId + "-notes")
+
+    if ( slideNotes.className.includes('hidden') ) {
+        document.getElementById(slideId + "-notes").className = slideNotes.className.replace('hidden', '')
+    } else {
+        document.getElementById(slideId + "-notes").className += " hidden"
+    }
+}
+</script>
