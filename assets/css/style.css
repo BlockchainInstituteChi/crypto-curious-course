@@ -609,12 +609,13 @@ div#license {
   display: none;
 }
 .notesToggleButton {
-  color: blue;
-  margin-right: 1em;
-  position: relative;
-  margin-top: -2em;
-  float: right;
-  display: block;
+    color: blue;
+    margin-right: 1em;
+    position: relative;
+    margin-top: -2.5em;
+    float: right;
+    display: block;
+    margin-right: .4em;
 }
 .notesDisclaimer {
     background: #efefef;
@@ -640,4 +641,8 @@ div#license {
     font-weight: 400;
     text-transform: uppercase;
     color: white;
+}
+img.notesIcon {
+    width: 5%;
+    float: right;
 }
