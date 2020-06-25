@@ -617,21 +617,27 @@ div#license {
   display: block;
 }
 .notesDisclaimer {
-  background: #03bed3;
-  border-radius: 4px;
-  color: #4c4242;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  font-family: kanit;
+    background: #efefef;
+    border-radius: 4px;
+    color: #4c4242;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 3em;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: .8em;
+    margin-top: 2.5em;
 }
 .notesDisclaimer a {
-  border: 1px solid black;
-  border-radius: 4px;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-  float: right;
-  margin-top: 0.05em;
-  display: block;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+    float: left;
+    margin-top: 0.2em;
+    display: block;
+    background-color: #0b9ba4;
+    font-family: Kanit;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
 }
