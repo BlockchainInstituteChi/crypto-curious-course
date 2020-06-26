@@ -93,6 +93,17 @@ ogDesc: Become a blockchain ambassador today!
 			content=slide.bodyText
 			notes=slide.notes
         %}
+    {% elsif slide.type == "example" %}
+		{% include example.html 
+            slideId=slide.slideId
+			title=slide.title
+            notes=slide.notes
+            goal=slide.goal
+            questions=slide.questions
+            required-materials=slide.required-materials
+            setup=slide.setup
+            steps=slide.steps
+        %}        
     {% elsif slide.type == "left-right" %} 
 		{% include leftRightSlide.html 
 			slideId=slide.slideId
