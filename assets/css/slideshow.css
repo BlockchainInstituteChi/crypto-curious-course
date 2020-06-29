@@ -264,12 +264,15 @@ h3.exampleSubhead {
 }
 article#block-example {
     border: none;
-    background-color: #003449;
     color: white;
     padding-top: .1em;
     padding-bottom: 1em;
     padding-left: .4em;
     padding-right: .4em;
+    background: url(/assets/img/BCI_rightalign_white.png) no-repeat;
+    background-position: top 1.5em right 1em;
+    background-size: 100px;
+    background-color: #003449;
 }
 
 
