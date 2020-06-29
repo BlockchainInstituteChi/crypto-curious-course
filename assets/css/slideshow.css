@@ -262,6 +262,15 @@ span.handsOnParagraph {
 h3.exampleSubhead {
     margin-left: .8em !important;
 }
+article#block-example {
+    border: none;
+    background-color: #003449;
+    color: white;
+    padding-top: .1em;
+    padding-bottom: 1em;
+    padding-left: .4em;
+    padding-right: .4em;
+}
 
 
 
