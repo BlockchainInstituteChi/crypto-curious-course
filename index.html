@@ -54,12 +54,7 @@ ogDesc: Become a blockchain ambassador today!
     </div>
     <div>
         <h2>Table of Contents</h2>
-        <ol id="toc">
-
-		{% for slide in site.slides %}
-            <li class="{% if slide.isSectionHead == true or slide.type == 'title-break' %}section{% elsif slide.isQuestionSlide == true  or slide.type == 'prompt-question' %}question-slide{% endif %}"><a href="#{{ slide.slideId }}">{{ slide.title }}</a></li>
-		{% endfor %}
-
+        <ol id="toc">{% for slide in site.slides %}{% if slide.isSectionHead == true or slide.type == 'title-break' %}<li class="section"><a href="#{{ slide.slideId }}">{{ slide.title }}</a></li>{% elsif slide.isQuestionSlide == true  or slide.type == 'prompt-question' %}<li class="question-slide"><a href="#{{ slide.slideId }}">{{ slide.title }}</a></li>{% elsif slide.type == 'example' %}<li class="example"><a href="#{{ slide.slideId }}">Example: {{ slide.title }}</a></li>{% endif %}{% endfor %}
         </ol>
     </div>       
 
@@ -97,12 +92,8 @@ ogDesc: Become a blockchain ambassador today!
 		{% include example.html 
             slideId=slide.slideId
 			title=slide.title
-            notes=slide.notes
             goal=slide.goal
-            questions=slide.questions
-            required-materials=slide.required-materials
-            setup=slide.setup
-            steps=slide.steps
+            content=slide.details
         %}        
     {% elsif slide.type == "left-right" %} 
 		{% include leftRightSlide.html 

@@ -1,14 +1,10 @@
 <article class="example" id="{{ include.slideId }}">
     <header>
-        <h2>{{ include.title }}</h2>
+        <h1>Hands-On Activity</h1>
+        <h2>"{{ include.title }}"</h2>
+        <span class="goal">{{ include.goal }}</span>
     </header>
     <div>
         {{ include.content }}
     </div>
-    {% include toggleNotesButton.html
-        slideId = include.slideId
-    %}
-    <footer class="notes-footer" id="{{ include.slideId }}-notes">
-        {{ include.notes }}
-    </footer>
 </article>
