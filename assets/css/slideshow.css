@@ -275,6 +275,11 @@ article#block-example {
     background-color: #003449;
     border-right: 5px solid #003449;
 }
+span.goal {
+    font-family: roboto;
+    font-weight: 300;
+    font-size: .9em;
+}
 
 
 
