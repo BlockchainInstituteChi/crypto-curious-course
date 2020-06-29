@@ -273,6 +273,7 @@ article#block-example {
     background-position: top 1.5em right 1em;
     background-size: 100px;
     background-color: #003449;
+    border-right: 5px solid #003449;
 }
 
 
