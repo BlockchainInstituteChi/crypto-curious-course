@@ -61,7 +61,7 @@ header h3 {
 }
 h3 {
     font-weight: 400;
-    font-size: 1.2em;
+    font-size: 1.2em !important;
     text-transform: uppercase;
     margin-top: 1.5rem !important;
 }
@@ -90,8 +90,8 @@ ul ul {
 
 
 article>header {
-    padding-left: 2.5ex;
-    padding-right: 2.5ex;
+    padding-left: 2.25ex;
+    padding-right: 2.25ex;
 }
 
 article>div {
