@@ -646,3 +646,24 @@ img.notesIcon {
     width: 5%;
     float: right;
 }
+
+// Survey callout 
+.feedbackCallToAction {
+  background: #efefef;
+  display: block;
+  position: relative;
+  text-align: center;
+}
+.feedbackCallToAction a {
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+  margin-top: 0.2em;
+  display: block;
+  background-color: #ed0744;
+  font-family: Kanit;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
