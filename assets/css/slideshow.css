@@ -251,6 +251,17 @@ ol#toc>li.section a {
 #housekeeping div p {
     font-weight: 300;
 }
+span.handsOnParagraph {
+    float: left;
+    margin-bottom: 1.5rem;
+    font-family: roboto;
+    font-weight: 300;
+    font-size: .9em;
+    padding-left: .2em;
+}
+h3.exampleSubhead {
+    margin-left: .8em !important;
+}
 
 
 
