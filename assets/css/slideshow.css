@@ -285,6 +285,29 @@ ul.exampleBullets {
     font-size: .8em;
     margin-bottom: 1.2em;
 }
+.feedbackCallToAction {
+    padding: 2em;
+    border: 5px solid #efefef;
+}
+.feedbackCallToAction span {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: .9em;
+    margin-bottom: 2em;
+    display: block;
+}
+.feedbackCallToAction a {
+    padding: 1em 3em 1em 3em;
+    background-color: #ed0744;
+    font-family: Kanit;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0.05em;
+    display: block;
+}
 
 
 
