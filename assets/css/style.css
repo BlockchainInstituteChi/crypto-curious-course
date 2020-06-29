@@ -603,3 +603,46 @@ article#title-slide {
 div#license {
   margin-bottom: 3em;
 }
+
+/* Notes Toggling */
+.hidden {
+  display: none;
+}
+.notesToggleButton {
+    color: blue;
+    margin-right: 1em;
+    position: relative;
+    margin-top: -2.5em;
+    float: right;
+    display: block;
+    margin-right: .4em;
+}
+.notesDisclaimer {
+    background: #efefef;
+    border-radius: 4px;
+    color: #4c4242;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 3em;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: .8em;
+    margin-top: 2.5em;
+}
+.notesDisclaimer a {
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+    float: left;
+    margin-top: 0.2em;
+    display: block;
+    background-color: #ed0744;
+    font-family: Kanit;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+}
+img.notesIcon {
+    width: 5%;
+    float: right;
+}

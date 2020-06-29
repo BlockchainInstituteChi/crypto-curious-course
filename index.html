@@ -54,14 +54,15 @@ ogDesc: Become a blockchain ambassador today!
     </div>
     <div>
         <h2>Table of Contents</h2>
-        <ol id="toc">
-
-		{% for slide in site.slides %}
-            <li class="{% if slide.isSectionHead == true or slide.type == 'title-break' %}section{% elsif slide.isQuestionSlide == true  or slide.type == 'prompt-question' %}question-slide{% endif %}"><a href="#{{ slide.slideId }}">{{ slide.title }}</a></li>
-		{% endfor %}
-
+        <ol id="toc">{% for slide in site.slides %}{% if slide.isSectionHead == true or slide.type == 'title-break' %}<li class="section"><a href="#{{ slide.slideId }}">{{ slide.title }}</a></li>{% elsif slide.isQuestionSlide == true  or slide.type == 'prompt-question' %}<li class="question-slide"><a href="#{{ slide.slideId }}">{{ slide.title }}</a></li>{% elsif slide.type == 'example' %}<li class="example"><a href="#{{ slide.slideId }}">Example: {{ slide.title }}</a></li>{% endif %}{% endfor %}
         </ol>
     </div>       
+
+    <div class="notesDisclaimer">
+        <span>The slides below show the slide first, with notes below it. To see the slides only, click the button below.</span>
+        <a onclick="toggleAllNotes()">Toggle Notes</a>
+    </div>
+
 {% assign sorted = site.slides | sort: 'slideId' %}
 {% for slide in site.slides %}
     {% if slide.type == "title-break" %}
@@ -87,6 +88,13 @@ ogDesc: Become a blockchain ambassador today!
 			content=slide.bodyText
 			notes=slide.notes
         %}
+    {% elsif slide.type == "example" %}
+		{% include example.html 
+            slideId=slide.slideId
+			title=slide.title
+            goal=slide.goal
+            content=slide.details
+        %}        
     {% elsif slide.type == "left-right" %} 
 		{% include leftRightSlide.html 
 			slideId=slide.slideId
@@ -136,3 +144,61 @@ ogDesc: Become a blockchain ambassador today!
 	{% endif %}
 
 {% endfor %}
+
+    <div id="thanks">
+            <h5>Thanks</h5>
+        <div>
+            <p>To everyone who has contributed to this guide. It's all the small typos, heading level changes, blood, sweat, and tears put into this content that makes it so special. Without the following people, Crypto Curious Course would not be possible:</p>
+            <ul>
+                <li>Hannah Rosenberg</li>
+                <li>Jordan Ruiz</li>
+                <li>Jeremy Cogan</li>
+                <li>Corey DiNardo</li>
+                <li>Alex Morris</li>
+                <li>Jason Swearingen</li>
+            </ul>
+        </div>
+        <footer></footer>
+    </div>
+    <div id="license">
+            <h5>Licensing</h5>
+        <div>
+            <p>Please attribute Blockchain Institute with a link to <a href="q=https://weteachblockchain.org">WeTeachBlockchain.org</a></p>
+            <!-- <img alt="Licensing" src="images/by.png" title="Licensing" width="150"> -->
+            <p>Except where otherwise noted, this work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit <a href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a> or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.</p>
+            <p>Third party marks and brands are the property of their respective holders.</p>
+        </div>
+    </div>
+
+<script>
+function toggleAllNotes () {
+    var allNotes = document.getElementsByClassName('notes-footer')
+
+    // key off the first one to set the mode:
+    if ( allNotes[0].className.includes('hidden') ) {
+        // first one is hidden, so all should be displayed 
+        for (note of allNotes) {
+            note.className = note.className.replace('hidden', '')
+        }
+    } else {
+        // first one is not hidden, so all should be hidden
+        for (note of allNotes) {
+            if ( note.className.includes('hidden') ) {
+                // already hidden, do nothing
+            } else {
+                note.className += " hidden"
+            }
+        }
+    }
+}
+
+function toggleNotes (slideId) {
+    var slideNotes = document.getElementById(slideId + "-notes")
+
+    if ( slideNotes.className.includes('hidden') ) {
+        document.getElementById(slideId + "-notes").className = slideNotes.className.replace('hidden', '')
+    } else {
+        document.getElementById(slideId + "-notes").className += " hidden"
+    }
+}
+</script>
