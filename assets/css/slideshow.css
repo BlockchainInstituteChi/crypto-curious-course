@@ -130,7 +130,7 @@ figcaption {
     text-align: center;
     font-family: "Open Sans", sans-serif;
     font-weight: 100;
-    font-size: .8em;
+    font-size: .7em;
     margin-top: .5em !important;
 }
 
@@ -307,6 +307,9 @@ ul.exampleBullets {
     text-align: center;
     letter-spacing: 0.05em;
     display: block;
+}
+img.notesIcon {
+    margin-top: 0em !important;
 }
 
 
