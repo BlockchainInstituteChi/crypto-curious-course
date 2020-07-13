@@ -14,15 +14,15 @@ body {
 }
 
 li {
-    font-size: 1.1em;
+    font-size: 1.1em !important;
 }
 
 dl {
-    font-size: 1.1em;
+    font-size: 1.1em !important;
 }
 
 p {
-    font-size: 1.1em;
+    font-size: 1.1em !important;
 }
 
 h2 {
