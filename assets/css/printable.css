@@ -39,6 +39,22 @@ article.prompt-question>div {
 
 article.title-break header, article.prompt-question header {
     width: 97%;
-    padding-top: 230px;
+    padding-top: 290px;
     padding-left: 0em;
+}
+
+.title-break h2 {
+    font-size: 1.75em;
+}
+
+.prompt-question h2 {
+    font-size: 1.75em;
+}
+
+article#blockchains-not-free figure {
+    max-width: 62%;
+}
+
+article#modern-challanges figure {
+    max-width: 50%;
 }
