@@ -5,7 +5,7 @@
 article {
     margin-top: 1em;
     margin-bottom: 1em;
-    min-height: 34em;
+    min-height: 45em;
 }
 
 body {
@@ -52,9 +52,17 @@ article.title-break header, article.prompt-question header {
 }
 
 article#blockchains-not-free figure {
-    max-width: 62%;
+    max-width: 50%;
 }
 
 article#modern-challanges figure {
     max-width: 50%;
+}
+
+article#technology-tools-defenses figure {
+    max-width: 60%;
+}
+
+article#web3 figure {
+    max-width: 30%;
 }
