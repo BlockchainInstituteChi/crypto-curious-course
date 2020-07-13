@@ -1,3 +1,7 @@
+article#title-slide {
+    margin-top: 0em;
+}
+
 .notesToggleButton, footer {
     display: none;
 }
