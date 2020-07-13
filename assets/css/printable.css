@@ -70,3 +70,7 @@ article#technology-tools-defenses figure {
 article#web3 figure {
     max-width: 30%;
 }
+
+article {
+page-break-after : always;
+}
