@@ -55,8 +55,8 @@ article.title-break header, article.prompt-question header {
     font-size: 1.75em;
 }
 
-article#web3 figure {
-    max-width: 30%;
+.top-bottom img {
+    max-height: 25em;
 }
 
 article {
