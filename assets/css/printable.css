@@ -55,18 +55,6 @@ article.title-break header, article.prompt-question header {
     font-size: 1.75em;
 }
 
-article#blockchains-not-free figure {
-    max-width: 50%;
-}
-
-article#modern-challanges figure {
-    max-width: 50%;
-}
-
-article#technology-tools-defenses figure {
-    max-width: 60%;
-}
-
 article#web3 figure {
     max-width: 30%;
 }
