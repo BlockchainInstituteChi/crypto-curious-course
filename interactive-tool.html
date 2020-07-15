@@ -6,18 +6,29 @@ ogImage: assets/img/CCC_Title.jpeg
 ogDesc: Become a blockchain ambassador today!
 ---
 <div id="toc-container" class="modal tableOfContents">
+    <span onclick="tocToggle()" class="toggleButton">✕</span>
     <h2>Table of Contents</h2>
-    <ol id="toc">{% for slide in site.slides %}{% if slide.isSectionHead == true or slide.type == 'title-break' %}<li class="section"><a onclick="showSlide('{{ slide.slideId }}')">{{ slide.title }}</a></li>{% elsif slide.isQuestionSlide == true  or slide.type == 'prompt-question' %}<li class="question-slide"><a onclick="showSlide('{{ slide.slideId }}')">{{ slide.title }}</a></li>{% elsif slide.type == 'example' %}<li class="example"><a onclick="showSlide('{{ slide.slideId }}')">Example: {{ slide.title }}</a></li>{% else %}<li><a onclick="showSlide('{{ slide.slideId }}')">{{ slide.title }}</a></li>{% endif %}{% endfor %}
+    <ol id="toc">{% for slide in site.slides %}{% if slide.isSectionHead == true or slide.type == 'title-break' %}<li id="toc_{{ slide.slideId }}" class="section"><a onclick="showSlide('{{ slide.slideId }}')">{{ slide.title }}</a></li>{% elsif slide.isQuestionSlide == true  or slide.type == 'prompt-question' %}<li id="toc_{{ slide.slideId }}" class="question-slide"><a onclick="showSlide('{{ slide.slideId }}')">{{ slide.title }}</a></li>{% elsif slide.type == 'example' %}<li class="example" id="toc_{{ slide.slideId }}"><a onclick="showSlide('{{ slide.slideId }}')">Example: {{ slide.title }}</a></li>{% else %}<li id="toc_{{ slide.slideId }}"><a onclick="showSlide('{{ slide.slideId }}')">{{ slide.title }}</a></li>{% endif %}{% endfor %}
     </ol>
 </div>
 <div id="notes-container" class="modal notes">
-    <h1 id="notes-title"></h1>
-    <div id="notes-body">
+    <span onclick="notesToggle()" class="toggleButton">✕</span>
+    <div id="notes-body" class="notesBody">
 
     </div>
 </div>
 
-<div class="slideBody">
+<div class="controlBar">
+    <ul>
+        <li onclick="lastSlide()"> < </li>
+        <li onclick="tocToggle()">Slides</li>
+        <!-- <li onclick="presentationToggle()">Present</li> -->
+        <li onclick="notesToggle()">Notes</li>
+        <li onclick="nextSlide()"> > </li>
+    </ul>
+</div>
+
+<div class="slideBody" onclick="nextSlide()">
     {% for slide in site.slides %}
         {% if slide.type == "title-break" %}
             {% include title-break.html 
@@ -102,21 +113,41 @@ ogDesc: Become a blockchain ambassador today!
 
 <script>
     async function showSlide (slideId) {
-        console.log('displaying slide', slideId)
+        // console.log('displaying slide', slideId)
         await hideShownSlides () 
 
         document.getElementById(slideId).className += ' shown'
-        showNotes(slideId)
+        populateNotes(slideId)
+
+        await hideTocHighlight () 
+
+        document.getElementById("toc_" + slideId).className += ' tocHighlight'  
+
+        scrollTocToView('toc_' + slideId);
 
     }
 
     async function hideShownSlides ( ) {
         for (slide of document.getElementsByClassName('shown')){
-            console.log('hiding slide', slide)
+            // console.log('hiding slide', slide)
             slide.className = slide.className.replace('shown','')
         }
         return 
     }
+
+    function scrollTocToView ( id ) {
+        document.getElementById('toc-container').scrollTop = document.getElementById(id).offsetTop - ( document.getElementById('toc-container').offsetHeight / 2);
+
+
+    }
+
+    async function hideTocHighlight ( ) {
+        for (li of document.getElementsByClassName('tocHighlight')){
+            // console.log('hiding tocHighlight', li)
+            li.className = li.className.replace('tocHighlight','')
+        }
+        return 
+    }    
 
     showSlide('title-slide');
 
@@ -125,8 +156,86 @@ ogDesc: Become a blockchain ambassador today!
         }
     console.log('notes are ', window.notes)
 
-    function showNotes ( slideId ) {
-        console.log('found notes', window.notes[slideId])
+    function populateNotes ( slideId ) {
+        // console.log('found notes', window.notes[slideId])
         document.getElementById('notes-body').innerHTML = window.notes[slideId]
     }
+
+    function notesToggle () {
+        toggleElement('notes-container')
+    } 
+
+    function tocToggle () {
+        toggleElement('toc-container')
+    }
+
+    function toggleElement ( elementId ) {
+        // console.log('toggling', elementId)
+        if ( document.getElementById( elementId ).className.includes('hidden') ) {
+            document.getElementById( elementId ).className = document.getElementById( elementId ).className.replace('hidden', '')
+        } else {
+            document.getElementById( elementId ).className += ' hidden'
+        }
+    }
+
+    function nextSlide ( ) {
+
+        var currentSlide = document.getElementsByClassName('shown')[0].id;
+        var next = 0
+
+        for ( slide of document.getElementsByTagName('article') ) {
+            if ( next > 0 ) {
+                return showSlide (slide.id)
+            }
+            if ( slide.id === currentSlide ) {
+                next = 1
+            }
+        }   
+        return false;
+
+    }
+
+    function lastSlide ( ) {
+        
+        var currentSlide = document.getElementsByClassName('shown')[0].id;
+
+        if ( currentSlide != 'title-slide' ) {
+            var lastSlide = null;   
+
+            for ( slide of document.getElementsByTagName('article') ) {
+                if ( slide.id === currentSlide ) {
+                    return showSlide(lastSlide)
+                }
+                lastSlide = slide.id
+            }   
+            return false;
+        } else {
+            return false;
+        }
+
+    }    
+    
+    // Arrow key config
+    document.onkeydown = checkKey;
+
+    function checkKey(e) {
+
+        e = e || window.event;
+
+        if (e.keyCode == '38') {
+            tocToggle () 
+        }
+        else if (e.keyCode == '40') {
+            notesToggle () 
+        }
+        if (e.keyCode == '37') {
+            lastSlide () 
+        }
+        else if (e.keyCode == '39') {
+            nextSlide () 
+        }
+
+    }
+
+    
 </script>

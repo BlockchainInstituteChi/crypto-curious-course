@@ -76,21 +76,35 @@ article {
     display: none;
 }
 
+body {
+    overflow: hidden;
+}
 
 /* Modals */
 .modal {
     position: fixed;
-    background: white;
+    background: #f1e8e8;
     max-height: 100%;
+    left: 0;
     overflow-y: scroll;
     z-index: 20;
     top: 0;
+}
+.modal p, .modal ul, .modal h1, .modal h2 {
+    max-width: calc(100% - 1em);
+    margin: 0.5em;
 }
 .modal.notes {
     right: 0;
     left: unset;
     width: 20vw;
     height: 100%;
+}
+.notesBody {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 /* Body */
@@ -102,4 +116,43 @@ article {
 /* Handling show-slide */
 .shown {
     display: unset;
+}
+
+/* Handling TOC Progress */
+.tocHighlight {
+    background: yellow;
+}
+
+/* Controls */
+.controlBar {
+    width: 100vw;
+    position: fixed;
+    z-index: 15;
+    top: 0;
+    left: 0;
+    height: fit-content;
+}
+.controlBar ul {
+    width: fit-content;
+    margin: auto;
+    padding: 0;
+}
+.controlBar li {
+    display: inline-block;
+    padding: 0.5em;
+    color: #002942;
+}
+.controlBar li {
+    display: inline-block;
+    padding: 0.5em;
+    color: #002942;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 0.95em !important;
+}
+span.toggleButton {
+    float: right;
+    position: absolute;
+    right: 0.25em;
 }
