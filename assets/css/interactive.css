@@ -1,0 +1,158 @@
+article#title-slide {
+    margin-top: 0em;
+}
+
+.notesToggleButton, footer {
+    display: none;
+}
+
+article {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    min-height: 45em;
+}
+
+body {
+    max-width: 100%;
+    width: 100% !important;
+}
+
+li {
+    font-size: 1.1em !important;
+}
+
+dl {
+    font-size: 1.1em !important;
+}
+
+p {
+    font-size: 1.1em !important;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+article.title-break>div {
+    min-height: inherit;
+}
+
+article.prompt-question>div {
+    min-height: inherit;
+}
+
+article.title-break header, article.prompt-question header {
+    width: 97%;
+    padding-top: 270px;
+    padding-left: 0em;
+}
+
+.title-break h2 {
+    font-size: 1.75em;
+}
+
+.prompt-question h2 {
+    font-size: 1.75em;
+}
+
+article#blockchains-not-free figure {
+    max-width: 50%;
+}
+
+article#modern-challanges figure {
+    max-width: 50%;
+}
+
+article#technology-tools-defenses figure {
+    max-width: 60%;
+}
+
+article#web3 figure {
+    max-width: 30%;
+}
+
+article {
+    page-break-after : always;
+    display: none;
+}
+
+body {
+    overflow: hidden;
+}
+
+/* Modals */
+.modal {
+    position: fixed;
+    background: #f1e8e8;
+    max-height: 100%;
+    left: 0;
+    overflow-y: scroll;
+    z-index: 20;
+    top: 0;
+}
+.modal p, .modal ul, .modal h1, .modal h2 {
+    max-width: calc(100% - 1em);
+    margin: 0.5em;
+}
+.modal.notes {
+    right: 0;
+    left: unset;
+    width: 20vw;
+    height: 100%;
+}
+.notesBody {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+/* Body */
+.slideBody {
+    max-width: 50vw;
+    margin: auto;
+}
+
+/* Handling show-slide */
+.shown {
+    display: unset;
+}
+
+/* Handling TOC Progress */
+.tocHighlight {
+    background: yellow;
+}
+
+/* Controls */
+.controlBar {
+    width: 100vw;
+    position: fixed;
+    z-index: 15;
+    top: 0;
+    left: 0;
+    height: fit-content;
+}
+.controlBar ul {
+    width: fit-content;
+    margin: auto;
+    padding: 0;
+}
+.controlBar li {
+    display: inline-block;
+    padding: 0.5em;
+    color: #002942;
+}
+.controlBar li {
+    display: inline-block;
+    padding: 0.5em;
+    color: #002942;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 0.95em !important;
+}
+span.toggleButton {
+    float: right;
+    position: absolute;
+    right: 0.25em;
+}
