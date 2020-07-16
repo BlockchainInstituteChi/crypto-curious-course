@@ -279,17 +279,18 @@ ogDesc: Become a blockchain ambassador today!
 
         e = e || window.event;
 
+        console.log('key press', e.keyCode)
+
         if (e.keyCode == '38') {
             tocToggle () 
-        }
-        else if (e.keyCode == '40') {
+        } else if (e.keyCode == '40') {
             notesToggle () 
-        }
-        if (e.keyCode == '37') {
+        } else if (e.keyCode == '37') {
             lastSlide () 
-        }
-        else if (e.keyCode == '39') {
+        } else if (e.keyCode == '39') {
             nextSlide () 
+        } else if (e.keyCode == '32') {
+            openFullscreen () 
         }
 
     }
