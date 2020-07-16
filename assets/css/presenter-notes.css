@@ -48,3 +48,16 @@ span.toggleButton {
     text-align: center;
     width: 100%;
 }
+.controlBar li {
+    display: inline-block;
+    font-size: 1.25em;
+    padding: 0.5em;
+    margin-top: 0.1em;
+    padding-left: 0.65em;
+    padding-right: 0.65em;
+}
+.controlBar li:hover {
+    background: #8080809c;
+    border-radius: 0.15em;
+    color: white;
+}
