@@ -22,13 +22,13 @@ ogDesc: Become a blockchain ambassador today!
     <ul>
         <li onclick="lastSlide()"> < </li>
         <li onclick="tocToggle()">Slides</li>
-        <!-- <li onclick="presentationToggle()">Present</li> -->
+        <li onclick="presentationToggle()">Present</li>
         <li onclick="notesToggle()">Notes</li>
         <li onclick="nextSlide()"> > </li>
     </ul>
 </div>
 
-<div class="slideBody" onclick="nextSlide()">
+<div class="slideBody" id="slideBody" onclick="nextSlide()">
     {% for slide in site.slides %}
         {% if slide.type == "title-break" %}
             {% include title-break.html 
@@ -237,5 +237,40 @@ ogDesc: Become a blockchain ambassador today!
 
     }
 
-    
+
+    async function presentationToggle () {
+        // await openFullscreen();
+
+        await openNotes ();
+
+
+    }
+
+    async function openNotes () {
+        var myWindow = await window.open("presenter-notes.html", "", "toolbar=no,menubar=no,width=600,height=500");
+        // myWindow.document.write("<p>This is 'MsgWindow'. I am 200px wide and 100px tall!</p>");
+        
+        message_broadcast ({
+            currentSlide : 'title-slide'
+        })
+
+        return
+    }
+
+    async function openFullscreen() {
+        var elem = document.getElementById('slideBody')
+
+        if (elem.requestFullscreen) {
+            return elem.requestFullscreen();
+        } else if (elem.mozRequestFullScreen) { /* Firefox */
+            return  elem.mozRequestFullScreen();
+        } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+            return elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) { /* IE/Edge */
+            return elem.msRequestFullscreen();
+        } else {
+            return false;
+        }
+
+    }
 </script>
