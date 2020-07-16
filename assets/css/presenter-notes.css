@@ -61,3 +61,9 @@ span.toggleButton {
     border-radius: 0.15em;
     color: white;
 }
+a {
+    cursor: pointer;
+}
+.controlBar {
+    cursor: pointer;
+}

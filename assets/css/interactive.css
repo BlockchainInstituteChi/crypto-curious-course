@@ -182,3 +182,14 @@ span.toggleButton {
     margin-right: 1em;
     font-size: 1.5em;
 }
+
+/* Cursor Styling */
+a {
+    cursor: pointer;
+}
+.controlBar {
+    cursor: pointer;
+}
+.slideBody {
+    cursor: pointer;
+}
