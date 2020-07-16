@@ -72,7 +72,7 @@ article#web3 figure {
 }
 
 article {
-    page-break-after : always;
+    /* page-break-after : always; */
     display: none;
 }
 
