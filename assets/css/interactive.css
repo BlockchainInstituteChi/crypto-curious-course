@@ -72,7 +72,7 @@ article#web3 figure {
 }
 
 article {
-    page-break-after : always;
+    /* page-break-after : always; */
     display: none;
 }
 
@@ -149,10 +149,36 @@ body {
     font-weight: 400;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    font-size: 0.95em !important;
+    font-size: 1.15em !important;
+    padding: 0.5em;
+    margin-top: 0.1em;
+    padding-left: 0.65em;
+    padding-right: 0.65em;
+}
+.controlBar li:hover {
+    background: #8080809c;
+    border-radius: 0.15em;
+    color: white;
 }
 span.toggleButton {
     float: right;
     position: absolute;
     right: 0.25em;
+}
+
+/* Info Section */
+.info {
+    width: 100vw;
+    position: absolute;
+    background: white;
+    z-index: 50;
+    top: 0;
+    height: 100vh;
+    padding-left: 20%;
+    padding-right: 20%;
+    overflow-y: scroll;
+}
+.info span.toggleButton {
+    margin-right: 1em;
+    font-size: 1.5em;
 }

@@ -1,0 +1,63 @@
+/* presenter-notes.css */
+.toc {
+    max-width: 50vw;
+    display: inline-block;
+    float: left;
+    z-index: 10;
+    background: white;
+    position: fixed;
+    box-shadow: 1px 1px 5px 0px grey;
+    max-height: 100%;
+    overflow-y: scroll;
+    top: 0;
+}
+.notes {
+    display: inline-block;
+    float: left;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.hidden {
+    display: none;
+}
+.controlBar {
+    width: 100%;
+    text-align: center;
+}
+.controlBar ul {
+    padding: 0;
+    margin: 0;
+}
+.controlBar li {
+    display: inline-block;
+}
+
+/* Handling TOC Progress */
+.tocHighlight {
+    background: yellow;
+}
+
+span.toggleButton {
+    position: fixed;
+}
+.notes-container h2 {
+    text-align: center;
+    width: 100%;
+}
+.controlBar li {
+    display: inline-block;
+    font-size: 1.25em;
+    padding: 0.5em;
+    margin-top: 0.1em;
+    padding-left: 0.65em;
+    padding-right: 0.65em;
+}
+.controlBar li:hover {
+    background: #8080809c;
+    border-radius: 0.15em;
+    color: white;
+}
