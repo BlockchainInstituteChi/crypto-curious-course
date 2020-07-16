@@ -291,6 +291,8 @@ ogDesc: Become a blockchain ambassador today!
             nextSlide () 
         } else if (e.keyCode == '32') {
             openFullscreen () 
+        } else if (e.keyCode == '80') {
+            openNotes()
         }
 
     }
@@ -335,12 +337,12 @@ ogDesc: Become a blockchain ambassador today!
     }
 
     
-    function killNotes () {
-        window.presentation = false;
-        message_broadcast ({
-            trigger : "terminate"
-        })
-    }
+    // function killNotes () {
+    //     window.presentation = false;
+    //     message_broadcast ({
+    //         trigger : "terminate"
+    //     })
+    // }
 
     // Poorly functioning full screen triggers
     // if (document.addEventListener){
