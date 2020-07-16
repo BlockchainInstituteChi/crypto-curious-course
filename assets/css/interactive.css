@@ -156,3 +156,20 @@ span.toggleButton {
     position: absolute;
     right: 0.25em;
 }
+
+/* Info Section */
+.info {
+    width: 100vw;
+    position: absolute;
+    background: white;
+    z-index: 50;
+    top: 0;
+    height: 100vh;
+    padding-left: 20%;
+    padding-right: 20%;
+    overflow-y: scroll;
+}
+.info span.toggleButton {
+    margin-right: 1em;
+    font-size: 1.5em;
+}

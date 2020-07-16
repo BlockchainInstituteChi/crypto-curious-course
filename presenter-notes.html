@@ -1,3 +1,6 @@
+---
+---
+
 <html>
     <head>
         <meta charset="utf-8">
@@ -8,18 +11,146 @@
         <link rel=icon href="assets/img/logoFiles/cropped-android-chrome-256x256-192x192.png" sizes="192x192">
         <link rel=apple-touch-icon-precomposed href="assets/img/logoFiles/cropped-android-chrome-256x256-180x180.png">
         <meta name=msapplication-TileImage content="assets/img/logoFiles/cropped-android-chrome-256x256-270x270.png">
+
+        <link rel="stylesheet" href="assets/css/slideshow.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
         <link rel="stylesheet" href="assets/css/presenter-notes.css" />
         <script type="text/javascript" src="/assets/js/broadcastLayer.js"></script>
     </head>
     <body>
-        <div class="toc">
-            <h1>...</h1>
+
+        <div class="controlBar">
+            <ul>
+                <li onclick="lastSlide()"> < </li>
+                <li onclick="tocToggle()">Slides</li>
+                <li onclick="window.close()">Exit</li>
+                <li onclick="nextSlide()"> > </li>
+            </ul>
         </div>
-        <div class="notes">
-            <span>Loading...</span>
+
+        <div  id="toc-container" class="toc hidden">
+            <span onclick="tocToggle()" class="toggleButton">✕</span>
+            <ol id="toc">{% for slide in site.slides %}{% if slide.isSectionHead == true or slide.type == 'title-break' %}<li id="toc_{{ slide.slideId }}" class="section"><a onclick="showSlide('{{ slide.slideId }}')">{{ slide.title }}</a></li>{% elsif slide.isQuestionSlide == true  or slide.type == 'prompt-question' %}<li id="toc_{{ slide.slideId }}" class="question-slide"><a onclick="showSlide('{{ slide.slideId }}')">{{ slide.title }}</a></li>{% elsif slide.type == 'example' %}<li class="example" id="toc_{{ slide.slideId }}"><a onclick="showSlide('{{ slide.slideId }}')">Example: {{ slide.title }}</a></li>{% else %}<li id="toc_{{ slide.slideId }}"><a onclick="showSlide('{{ slide.slideId }}')">{{ slide.title }}</a></li>{% endif %}{% endfor %}
+        </div>
+        <div id="notes-container" class="notes-container">
+            <h2 id="slide-header">...</h2>
+            <div id="notes" class="notes">
+                <span>Loading...</span>
+            </div>
         </div>
         <script>
-            // setTimeout(message_broadcast)
+            loadNotes();
+            populateNotes('title-slide')
+
+            function updateSlideTitle ( title ) {
+                document.getElementById('slide-header').innerText = title
+            }
+
+            function nextSlide ( ) {
+                message_broadcast({ trigger : 'nextSlide'})
+            }
+
+            function lastSlide ( ) {
+                message_broadcast({ trigger : 'lastSlide'})
+            }
+
+            function showSlide ( id ) {
+                message_broadcast({
+                    trigger : 'showSlide',
+                    slideId : id
+                })
+            }
+
+            async function updateTOC ( ) {
+                var currentSlide = localStorage.getItem('currentSlide')
+
+                await hideTocHighlight () 
+
+                document.getElementById("toc_" + currentSlide).className += ' tocHighlight'  
+
+                scrollTocToView( "toc_" + currentSlide );
+
+            }
+
+            async function hideTocHighlight ( ) {
+                for (li of document.getElementsByClassName('tocHighlight')){
+                    // console.log('hiding tocHighlight', li)
+                    li.className = li.className.replace('tocHighlight','')
+                }
+                return 
+            }   
+
+            function loadNotes () {
+                var localNotes = localStorage.getItem('notes');
+                // console.log('localNotes', localNotes)
+                window.notes = JSON.parse(localNotes)
+                // console.log('set notes', window.notes)
+            }
+
+            function populateNotes ( slideId ) {
+                console.log('found notes', window.notes[slideId])
+                updateSlideTitle ( document.getElementById('toc_' + slideId).children[0].innerText ) 
+                document.getElementById('notes').innerHTML = window.notes[slideId]
+            }
+
+            window.onMessageEvent = function ( ev ) {
+                console.log('handling event', ev)
+                if ( event.data.trigger === "loadNotes" ) {
+                    // console.log('load notes triggered!')
+                    loadCurrentNotes ()
+                } else if ( event.data.trigger === "terminate" ) {
+                    window.close()
+                } else if ( event.data.trigger === "tocUpdate" ) {
+                    updateTOC()
+                } 
+            }
+
+            function loadCurrentNotes ( ) {
+                var currentSlide = localStorage.getItem('currentSlide')
+                // console.log('got current slide from local storage', currentSlide)
+                populateNotes(currentSlide)
+            }
+
+            function scrollTocToView ( id ) {
+                document.getElementById('toc-container').scrollTop = document.getElementById(id).offsetTop - ( document.getElementById('toc-container').offsetHeight / 2);
+            }
+
+            function tocToggle () {
+                toggleElement('toc-container')
+            }
+
+            function toggleElement ( elementId ) {
+                // console.log('toggling', elementId)
+                if ( document.getElementById( elementId ).className.includes('hidden') ) {
+                    document.getElementById( elementId ).className = document.getElementById( elementId ).className.replace('hidden', '')
+                } else {
+                    document.getElementById( elementId ).className += ' hidden'
+                }
+            }
+
+            // Arrow key config
+            document.onkeydown = checkKey;
+
+            function checkKey(e) {
+
+                e = e || window.event;
+
+                if (e.keyCode == '38') {
+                    tocToggle () 
+                }
+                // else if (e.keyCode == '40') {
+                //     notesToggle () 
+                // }
+                if (e.keyCode == '37') {
+                    lastSlide () 
+                }
+                else if (e.keyCode == '39') {
+                    nextSlide () 
+                }
+
+            }
+
+
         </script>
     </body>
 </html>
