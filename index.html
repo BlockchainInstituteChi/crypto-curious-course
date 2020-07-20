@@ -1,12 +1,62 @@
 ---
 title: CCC Instructors Guide
-layout: teachers-guide
+layout: interactive-tool
 ogTitle: Crypto Curious Teacher's Guide
 ogImage: assets/img/CCC_Title.jpeg
 ogDesc: Become a blockchain ambassador today!
 ---
+<div id="toc-container" class="modal tableOfContents hidden">
+    <span onclick="tocToggle()" class="toggleButton">✕</span>
+    <h2>Table of Contents</h2>
+    <ol id="toc">{% for slide in site.slides %}{% if slide.isSectionHead == true or slide.type == 'title-break' %}<li id="toc_{{ slide.slideId }}" class="section"><a onclick="showSlide('{{ slide.slideId }}')">{{ slide.title }}</a></li>{% elsif slide.isQuestionSlide == true  or slide.type == 'prompt-question' %}<li id="toc_{{ slide.slideId }}" class="question-slide"><a onclick="showSlide('{{ slide.slideId }}')">{{ slide.title }}</a></li>{% elsif slide.type == 'example' %}<li class="example" id="toc_{{ slide.slideId }}"><a onclick="showSlide('{{ slide.slideId }}')">Example: {{ slide.title }}</a></li>{% else %}<li id="toc_{{ slide.slideId }}"><a onclick="showSlide('{{ slide.slideId }}')">{{ slide.title }}</a></li>{% endif %}{% endfor %}
+    </ol>
+</div>
+<div id="notes-container" class="modal notes hidden">
+    <span onclick="notesToggle()" class="toggleButton">✕</span>
+    <div id="notes-body" class="notesBody">
 
- <a href="#toc"><img src="assets/img/UPbutton-01.png" id="fixedbutton"></a>
+    </div>
+</div>
+
+<div class="controlBar">
+    <ul>
+        <li onclick="lastSlide()">
+            <i class="fas fa-chevron-left"></i>
+            <span>Back</span>
+        </li>
+        <li onclick="tocToggle()">
+            <i class="fas fa-bars"></i>
+            <span>All Slides</span>
+        </li>
+        <li onclick="presentationToggle()">
+            <i class="fas fa-external-link-alt"></i>
+            <span>Present</span>
+        </li>
+        <li onclick="infoToggle()">
+            <i class="fas fa-info-circle"></i>
+            <span>Info</span>
+        </li>
+        <li onclick="openFullscreen()">
+            <i class="fas fa-expand"></i>
+            <span>Full Screen</span>
+        </li>
+        <li onclick="notesToggle()">
+            <i class="far fa-clipboard"></i>
+            <span>Notes</span>
+        </li>
+        <li onclick="openDocView()">
+            <i class="fas fa-file-alt"></i>
+            <span>Document</span>
+        </li>
+        <li onclick="nextSlide()">
+            <i class="fas fa-chevron-right"></i>
+            <span>Next</span>
+        </li>
+    </ul>
+</div>
+
+<div id="info" class="info hidden">
+    <span onclick="infoToggle()" class="toggleButton">✕</span>
     <h1>Crypto Curious Course</h1>
     <p class="author">Blockchain Institute <br> June 2020</p>
     <div class="abstract">
@@ -34,6 +84,7 @@ ogDesc: Become a blockchain ambassador today!
                 </ul>
             </ul>
 
+            {% include feedbackCallToAction.html %}
             <!-- <figure><img alt="Blockchain Institute" src="assets/img/housekeeping.jpg" alt=""></figure> -->
         </div>
     </div>
@@ -52,157 +103,308 @@ ogDesc: Become a blockchain ambassador today!
 
         </ul>
     </div>
-    <div>
-        <h2>Table of Contents</h2>
-        <ol id="toc">{% for slide in site.slides %}{% if slide.isSectionHead == true or slide.type == 'title-break' %}<li class="section"><a href="#{{ slide.slideId }}">{{ slide.title }}</a></li>{% elsif slide.isQuestionSlide == true  or slide.type == 'prompt-question' %}<li class="question-slide"><a href="#{{ slide.slideId }}">{{ slide.title }}</a></li>{% elsif slide.type == 'example' %}<li class="example"><a href="#{{ slide.slideId }}">Example: {{ slide.title }}</a></li>{% else %}<li><a href="#{{ slide.slideId }}">{{ slide.title }}</a></li>{% endif %}{% endfor %}
-        </ol>
-    </div>       
+</div>
+<div class="slideBody" id="slideBody" onclick="nextSlide()">
+    {% for slide in site.slides %}
+        {% if slide.type == "title-break" %}
+            {% include title-break.html 
+                slideId=slide.slideId
+                title=slide.title
+                notes=slide.notes
+            %}
+        {% elsif slide.type == "full-image" %}
+            {% include full-image-slide.html 
+                slideId=slide.slideId
+                img=slide.img
+                imgAlt=slide.imgAlt
+                imgTitle=slide.imgTitle
+                imgCaption=slide.imgCaption
+                title=slide.title
+                notes=slide.notes
+            %}    
+        {% elsif slide.type == "full-text" %} 
+            {% include full-text-slide.html 
+                slideId=slide.slideId
+                title=slide.title
+                content=slide.bodyText
+                notes=slide.notes
+            %}
+        {% elsif slide.type == "example" %}
+            {% include example.html 
+                slideId=slide.slideId
+                title=slide.title
+                goal=slide.goal
+                content=slide.details
+            %}        
+        {% elsif slide.type == "left-right" %} 
+            {% include leftRightSlide.html 
+                slideId=slide.slideId
+                title=slide.title
+                content=slide.bodyText
+                notes=slide.notes
+                img=slide.img
+                imgAlt=slide.imgAlt
+                imgTitle=slide.imgTitle
+                imgCaption=slide.imgCaption
+            %}   
+        {% elsif slide.type == "top-bottom" %} 
+            {% include top-bottom-slide.html 
+                slideId=slide.slideId
+                title=slide.title
+                content=slide.bodyText
+                notes=slide.notes
+                img=slide.img
+                imgAlt=slide.imgAlt
+                imgTitle=slide.imgTitle
+                imgCaption=slide.imgCaption            
+            %}    
+        {% elsif slide.type == "prompt-question" %} 
+            {% include question-prompt-slide.html 
+                slideId=slide.slideId
+                title=slide.title
+                notes=slide.notes
+            %}
+        {% elsif slide.type == "custom" %} 
+            {% include custom-slide.html 
+                slideId=slide.slideId
+                title=slide.title
+                notes=slide.notes
+                content=slide.body
+            %}                                   
+        {% elsif slide.type == "default" %} 
+            {% include defaultSlide.html 
+                slideId=slide.slideId
+                title=slide.title
+                img=slide.img
+                imgAlt=slide.imgAlt
+                imgCaption=slide.imgCaption
+                imgTitle=slide.imgTitle
+                notes=slide.notes
+                content=slide.body
+            %} 
+        {% endif %}
 
-    {% include feedbackCallToAction.html %}
+    {% endfor %}
+</div>
 
-    <div class="notesDisclaimer">
-        <span>The slides below show the slide first, with notes below it. To see the slides only, click the button below.</span>
-        <a onclick="toggleAllNotes()">Toggle Notes</a>
-    </div>
-
-{% assign sorted = site.slides | sort: 'slideId' %}
-{% for slide in site.slides %}
-    {% if slide.type == "title-break" %}
-		{% include title-break.html 
-            slideId=slide.slideId
-			title=slide.title
-			notes=slide.notes
-        %}
-    {% elsif slide.type == "full-image" %}
-		{% include full-image-slide.html 
-            slideId=slide.slideId
-            img=slide.img
-            imgAlt=slide.imgAlt
-            imgTitle=slide.imgTitle
-            imgCaption=slide.imgCaption
-			title=slide.title
-			notes=slide.notes
-		%}    
-	{% elsif slide.type == "full-text" %} 
-		{% include full-text-slide.html 
-			slideId=slide.slideId
-			title=slide.title
-			content=slide.bodyText
-			notes=slide.notes
-        %}
-    {% elsif slide.type == "example" %}
-		{% include example.html 
-            slideId=slide.slideId
-			title=slide.title
-            goal=slide.goal
-            content=slide.details
-        %}        
-    {% elsif slide.type == "left-right" %} 
-		{% include leftRightSlide.html 
-			slideId=slide.slideId
-			title=slide.title
-			content=slide.bodyText
-			notes=slide.notes
-            img=slide.img
-            imgAlt=slide.imgAlt
-            imgTitle=slide.imgTitle
-            imgCaption=slide.imgCaption
-        %}   
-    {% elsif slide.type == "top-bottom" %} 
-		{% include top-bottom-slide.html 
-			slideId=slide.slideId
-			title=slide.title
-			content=slide.bodyText
-            notes=slide.notes
-            img=slide.img
-            imgAlt=slide.imgAlt
-            imgTitle=slide.imgTitle
-            imgCaption=slide.imgCaption            
-        %}    
-    {% elsif slide.type == "prompt-question" %} 
-		{% include question-prompt-slide.html 
-			slideId=slide.slideId
-			title=slide.title
-			notes=slide.notes
-        %}
-    {% elsif slide.type == "custom" %} 
-		{% include custom-slide.html 
-			slideId=slide.slideId
-			title=slide.title
-            notes=slide.notes
-            content=slide.body
-		%}                                   
-	{% elsif slide.type == "default" %} 
-		{% include defaultSlide.html 
-			slideId=slide.slideId
-			title=slide.title
-			img=slide.img
-			imgAlt=slide.imgAlt
-			imgCaption=slide.imgCaption
-			imgTitle=slide.imgTitle
-            notes=slide.notes
-            content=slide.body
-        %} 
-	{% endif %}
-
-{% endfor %}
-
-    <div id="thanks">
-            <h5>Thanks</h5>
-        <div>
-            <p>To everyone who has contributed to this guide. It's all the small typos, heading level changes, blood, sweat, and tears put into this content that makes it so special. Without the following people, Crypto Curious Course would not be possible:</p>
-            <ul>
-                <li>Hannah Rosenberg</li>
-                <li>Jordan Ruiz</li>
-                <li>Jeremy Cogan</li>
-                <li>Corey DiNardo</li>
-                <li>Alex Morris</li>
-                <li>Jason Swearingen</li>
-            </ul>
-        </div>
-        <footer></footer>
-    </div>
-    <div id="license">
-            <h5>Licensing</h5>
-        <div>
-            <p>Please attribute Blockchain Institute with a link to <a href="q=https://weteachblockchain.org">WeTeachBlockchain.org</a></p>
-            <!-- <img alt="Licensing" src="images/by.png" title="Licensing" width="150"> -->
-            <p>Except where otherwise noted, this work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit <a href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a> or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.</p>
-            <p>Third party marks and brands are the property of their respective holders.</p>
-        </div>
-    </div>
-
-    {% include feedbackCallToAction.html %}
-    
 <script>
-function toggleAllNotes () {
-    var allNotes = document.getElementsByClassName('notes-footer')
+    async function showSlide (slideId) {
+        // console.log('displaying slide', slideId)
+        await hideShownSlides () 
 
-    // key off the first one to set the mode:
-    if ( allNotes[0].className.includes('hidden') ) {
-        // first one is hidden, so all should be displayed 
-        for (note of allNotes) {
-            note.className = note.className.replace('hidden', '')
+        document.getElementById(slideId).className += ' shown'
+        populateNotes(slideId)
+        setCurrentSlide(slideId)
+        reloadPresenterNotes()
+
+        await hideTocHighlight () 
+
+        document.getElementById("toc_" + slideId).className += ' tocHighlight'  
+
+        scrollTocToView('toc_' + slideId);
+
+    }
+
+    async function hideShownSlides ( ) {
+        for (slide of document.getElementsByClassName('shown')){
+            // console.log('hiding slide', slide)
+            slide.className = slide.className.replace('shown','')
         }
-    } else {
-        // first one is not hidden, so all should be hidden
-        for (note of allNotes) {
-            if ( note.className.includes('hidden') ) {
-                // already hidden, do nothing
-            } else {
-                note.className += " hidden"
+        return 
+    }
+
+    function openDocView () {
+        window.open('/document-view.html')
+    }
+
+    function scrollTocToView ( id ) {
+        document.getElementById('toc-container').scrollTop = document.getElementById(id).offsetTop - ( document.getElementById('toc-container').offsetHeight / 2);
+        message_broadcast({ trigger: 'tocUpdate' })
+    }
+
+    async function hideTocHighlight ( ) {
+        for (li of document.getElementsByClassName('tocHighlight')){
+            // console.log('hiding tocHighlight', li)
+            li.className = li.className.replace('tocHighlight','')
+        }
+        return 
+    }    
+
+    showSlide('title-slide');
+
+    window.notes = { 
+        {% for slide in site.slides %}'{{ slide.slideId }}' : `{{ slide.notes }}`,{% endfor %}
+        }
+    localStorage.setItem('notes', JSON.stringify(window.notes) )
+    console.log('notes are ', window.notes)
+
+    function populateNotes ( slideId ) {
+        // console.log('found notes', window.notes[slideId])
+        document.getElementById('notes-body').innerHTML = window.notes[slideId]
+    }
+
+    function infoToggle () {
+        toggleElement('info')
+    } 
+
+    function notesToggle () {
+        toggleElement('notes-container')
+    } 
+
+    function tocToggle () {
+        toggleElement('toc-container')
+    }
+
+    function toggleElement ( elementId ) {
+        // console.log('toggling', elementId)
+        if ( document.getElementById( elementId ).className.includes('hidden') ) {
+            document.getElementById( elementId ).className = document.getElementById( elementId ).className.replace('hidden', '')
+        } else {
+            document.getElementById( elementId ).className += ' hidden'
+        }
+    }
+
+    function nextSlide ( ) {
+
+        var currentSlide = document.getElementsByClassName('shown')[0].id;
+        var next = 0
+
+        for ( slide of document.getElementsByTagName('article') ) {
+            if ( next > 0 ) {
+                return showSlide (slide.id)
             }
+            if ( slide.id === currentSlide ) {
+                next = 1
+            }
+        }   
+        return false;
+
+    }
+
+    function lastSlide ( ) {
+        
+        var currentSlide = document.getElementsByClassName('shown')[0].id;
+
+        if ( currentSlide != 'title-slide' ) {
+            var lastSlide = null;   
+
+            for ( slide of document.getElementsByTagName('article') ) {
+                if ( slide.id === currentSlide ) {
+                    return showSlide(lastSlide)
+                }
+                lastSlide = slide.id
+            }   
+            return false;
+        } else {
+            return false;
         }
-    }
-}
 
-function toggleNotes (slideId) {
-    var slideNotes = document.getElementById(slideId + "-notes")
+    }    
+    
+    // Arrow key config
+    document.onkeydown = checkKey;
 
-    if ( slideNotes.className.includes('hidden') ) {
-        document.getElementById(slideId + "-notes").className = slideNotes.className.replace('hidden', '')
-    } else {
-        document.getElementById(slideId + "-notes").className += " hidden"
+    function checkKey(e) {
+
+        e = e || window.event;
+
+        console.log('key press', e.keyCode)
+
+        if (e.keyCode == '38') {
+            tocToggle () 
+        } else if (e.keyCode == '40') {
+            notesToggle () 
+        } else if (e.keyCode == '37') {
+            lastSlide () 
+        } else if (e.keyCode == '39') {
+            nextSlide () 
+        } else if (e.keyCode == '32') {
+            openFullscreen () 
+        } else if (e.keyCode == '80') {
+            openNotes()
+        }
+
     }
-}
+
+
+    async function presentationToggle () {
+
+        await openNotes ();
+
+    }
+
+    function reloadPresenterNotes ( ) {
+        message_broadcast ({
+            trigger : 'loadNotes'
+        })
+    }
+
+    function setCurrentSlide ( slideId ) {
+        localStorage.setItem('currentSlide', slideId);
+    }
+
+    async function openNotes () {
+        window.presentation = true;
+
+        await window.open("presenter-notes.html", "", "toolbar=no,menubar=no,width=600,height=500");
+        
+        message_broadcast ({
+            trigger : 'loadNotes'
+        })
+
+        return
+    }
+    window.onMessageEvent = function ( ev ) {
+        console.log('handling event', ev)
+        if ( event.data.trigger === "nextSlide" ) {
+            nextSlide()
+        } else if ( event.data.trigger === "lastSlide" ) {
+            lastSlide()
+        } else if ( event.data.trigger === "showSlide" ) {
+            showSlide(event.data.slideId)
+        } 
+    }
+
+    
+    // function killNotes () {
+    //     window.presentation = false;
+    //     message_broadcast ({
+    //         trigger : "terminate"
+    //     })
+    // }
+
+    // Poorly functioning full screen triggers
+    // if (document.addEventListener){
+    //     document.addEventListener('fullscreenchange', exitHandler, false);
+    //     document.addEventListener('mozfullscreenchange', exitHandler, false);
+    //     document.addEventListener('MSFullscreenChange', exitHandler, false);
+    //     document.addEventListener('webkitfullscreenchange', exitHandler, false);
+    // }
+
+    // function exitHandler(){
+    //     if (document.webkitIsFullScreen || document.mozFullScreen || document.msFullscreenElement !== null){
+    //         if ( window.presentation ) {
+    //             killNotes()
+    //         } else {
+    //             // openNotes()
+    //         }
+    //     }
+    // }
+
+    async function openFullscreen() {
+        var elem = document.getElementById('slideBody')
+
+        if (elem.requestFullscreen) {
+            return elem.requestFullscreen();
+        } else if (elem.mozRequestFullScreen) { /* Firefox */
+            return  elem.mozRequestFullScreen();
+        } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+            return elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) { /* IE/Edge */
+            return elem.msRequestFullscreen();
+        } else {
+            return false;
+        }
+
+    }
 </script>
