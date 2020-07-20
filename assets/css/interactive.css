@@ -199,3 +199,39 @@ a {
 .slideBody {
     cursor: pointer;
 }
+
+
+/* title-break fix */
+article.title-break {
+    max-height: 100%;
+    min-height: 100%;
+}
+article.title-break>div, article.prompt-question>div {
+    background-size: contain;
+    background: none !important;
+    position: relative;
+    height: 100%;
+}
+.title-break h2, .prompt-question h2 {
+    color: white;
+    text-align: center;
+    font-size: 3em !important;
+    z-index: 1000 !important;
+    margin-top: 25% !important;
+    position: absolute;
+    width: -webkit-fill-available;
+    line-height: 1em;
+}
+.prompt-question h2 {
+    color: #b13173;
+}
+.title-break img, .prompt-question img {
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: unset !important;
+    z-index: -1;
+}
+
