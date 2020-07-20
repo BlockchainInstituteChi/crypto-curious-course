@@ -130,9 +130,10 @@ body {
     width: 100vw;
     position: fixed;
     z-index: 15;
-    top: 0;
     left: 0;
     height: fit-content;
+    position: fixed;
+    bottom: 1em;
 }
 .controlBar ul {
     width: fit-content;
