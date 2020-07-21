@@ -244,3 +244,22 @@ article.title-break>div, article.prompt-question>div {
 article.example, .example div, .example header {
     color: black;
 }
+/* article:before {
+    background: url(/assets/img/BlockchainInstitute_Logo_COLOR.png), no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 100px;
+    right: 0;
+    z-index: 100;
+    content: "";
+    display: block;
+} */
+header img {
+    position: absolute;
+    width: 8em;
+    right: 1.5em;
+    top: 0.5em;
+}
+header {
+    position: relative;
+}
