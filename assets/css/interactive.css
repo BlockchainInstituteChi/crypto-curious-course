@@ -144,9 +144,6 @@ body {
     display: inline-block;
     padding: 0.5em;
     color: #002942;
-    display: inline-block;
-    padding: 0.5em;
-    color: #002942;
     font-weight: 400;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -236,3 +233,14 @@ article.title-break>div, article.prompt-question>div {
     z-index: -1;
 }
 
+/* fullscreen */
+.fullScreen li, .fullScreen h1, .fullScreen h2, .fullScreen h3, .fullScreen h4, .fullScreen span, .fullScreen p, .fullScreen a {
+    /* color: white !important; */
+    font-size: 2.5em;
+}
+.slideBody.fullScreen {
+    background: white;
+}
+article.example, .example div, .example header {
+    color: black;
+}

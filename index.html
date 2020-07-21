@@ -322,7 +322,7 @@ ogDesc: Become a blockchain ambassador today!
             openFullscreen () 
         } else if (e.keyCode == '80') {
             openNotes()
-        }
+        } 
 
     }
 
@@ -374,25 +374,38 @@ ogDesc: Become a blockchain ambassador today!
     // }
 
     // Poorly functioning full screen triggers
-    // if (document.addEventListener){
-    //     document.addEventListener('fullscreenchange', exitHandler, false);
-    //     document.addEventListener('mozfullscreenchange', exitHandler, false);
-    //     document.addEventListener('MSFullscreenChange', exitHandler, false);
-    //     document.addEventListener('webkitfullscreenchange', exitHandler, false);
-    // }
+    if (document.addEventListener){
+        document.addEventListener('fullscreenchange', exitHandler, false);
+        document.addEventListener('mozfullscreenchange', exitHandler, false);
+        document.addEventListener('MSFullscreenChange', exitHandler, false);
+        document.addEventListener('webkitfullscreenchange', exitHandler, false);
+    }
 
-    // function exitHandler(){
-    //     if (document.webkitIsFullScreen || document.mozFullScreen || document.msFullscreenElement !== null){
-    //         if ( window.presentation ) {
-    //             killNotes()
-    //         } else {
-    //             // openNotes()
-    //         }
-    //     }
-    // }
+    function exitHandler(){
+        var exit = null;
+        if ( document.webkitIsFullScreen !== null ) {
+            exit = !document.webkitIsFullScreen
+        } else if ( document.mozFullScreen !== null ) {
+            exit = !document.mozFullScreen
+        } else if ( document.msFullscreenElement !== null ) {
+            exit = !document.msFullscreenElement
+        }
+
+        console.log('exit is ', exit)
+
+        var elem = document.getElementById('slideBody')
+
+        if ( exit ) {
+            elem.className = elem.className.split("fullScreen").join('')
+        } else {
+            elem.className += " fullScreen"
+        }
+
+    }
 
     async function openFullscreen() {
         var elem = document.getElementById('slideBody')
+            elem.className += " fullscreen"
 
         if (elem.requestFullscreen) {
             return elem.requestFullscreen();
