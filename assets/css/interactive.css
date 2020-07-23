@@ -99,15 +99,24 @@ body {
 .modal.notes {
     right: 0;
     left: unset;
-    width: 20vw;
+    width: 40vw;
     height: 100%;
+    background-color: #b13173;
+    padding: 2em 0em 2em 2em;
 }
 .notesBody {
     height: 100%;
     width: 100%;
     overflow-x: hidden;
     overflow-y: scroll;
+    padding-right: 2em;
 }
+.notesBody p {
+    font-size: .9em !important;
+    font-weight: 300;
+    color: white;
+}
+
 ol#toc>li.section a {
     font-size: 100%;
     font-weight: bold;
@@ -125,6 +134,31 @@ ol#toc>li.section {
 }
 #toc li a, a:visited {
     color: white;
+}
+p.subtitle {
+    font-family: Roboto;
+    font-weight: 300;
+    margin-top: 2.5em;
+}
+.notesBody p.subtitle {
+    font-family: Roboto;
+    font-weight: 200 !important;
+    font-size: 1.2em !important;
+    margin-bottom: 1em;
+    padding-left: 0em;
+}
+.modal h4 {
+    color: white;
+    margin-left: .875em;
+    text-transform: uppercase;
+    padding-top: 1em;
+}
+.modal h5 {
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: .75em;
+    margin-left: .85em;
 }
 
 /* Body */
