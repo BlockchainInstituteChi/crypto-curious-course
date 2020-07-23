@@ -84,12 +84,13 @@ body {
 /* Modals */
 .modal {
     position: fixed;
-    background: #f1e8e8;
+    background: #00a599;
     max-height: 100%;
     left: 0;
     overflow-y: scroll;
     z-index: 20;
     top: 0;
+    padding: 1em 0em 0em 1.5em;
 }
 .modal p, .modal ul, .modal h1, .modal h2 {
     max-width: calc(100% - 1em);
@@ -107,6 +108,24 @@ body {
     overflow-x: hidden;
     overflow-y: scroll;
 }
+ol#toc>li.section a {
+    font-size: 100%;
+    font-weight: bold;
+    color: white;
+}
+ol#toc>li.section {
+    color: white !important;
+    font-size: .95em !important;
+}
+#toc>li {
+    color: white;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: .8em !important;
+}
+#toc li a, a:visited {
+    color: white;
+}
 
 /* Body */
 .slideBody {
@@ -122,7 +141,7 @@ body {
 
 /* Handling TOC Progress */
 .tocHighlight {
-    background: yellow;
+    background: #82d1cb;
 }
 
 /* Controls */
@@ -168,7 +187,8 @@ body {
 span.toggleButton {
     float: right;
     position: absolute;
-    right: 0.25em;
+    right: 1.25em;
+    color: white;
 }
 
 /* Info Section */
