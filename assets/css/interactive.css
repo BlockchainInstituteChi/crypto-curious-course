@@ -133,7 +133,7 @@ body {
     left: 0;
     height: fit-content;
     position: fixed;
-    bottom: 1em;
+    bottom: 2em;
 }
 .controlBar ul {
     width: fit-content;
@@ -158,6 +158,7 @@ body {
 .controlBar span {
     display: block;
     text-align: center;
+    font-size: .75em;
 }
 .controlBar li:hover {
     background: #8080809c;
@@ -213,7 +214,7 @@ article.title-break>div, article.prompt-question>div {
 .title-break h2, .prompt-question h2 {
     color: white;
     text-align: center;
-    font-size: 3em !important;
+    font-size: 2em !important;
     z-index: 1000 !important;
     margin-top: 25% !important;
     position: absolute;
@@ -231,6 +232,9 @@ article.title-break>div, article.prompt-question>div {
     width: 100%;
     margin: unset !important;
     z-index: -1;
+}
+article h2 {
+    max-width: 70%;
 }
 
 /* fullscreen */
