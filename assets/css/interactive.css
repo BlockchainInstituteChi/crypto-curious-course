@@ -332,22 +332,11 @@ article.full-image>div>figure>img {
 }
 .fullScreen span.goal {
     font-size: 1.25em;
-    color: white;
-    background-color: #003449;
 }
 .fullScreen span.handsOnParagraph {
     font-size: 1.25em;
-    color: white;
-    background-color: #003449;
 }
-.fullScreen .example h2, .fullScreen .example h2  {
-    color: white;
-    background-color: #003449;
-}
-.fullScreen .example li {
-    color: white;
-    background-color: #003449;
-}
+
 
 
 
