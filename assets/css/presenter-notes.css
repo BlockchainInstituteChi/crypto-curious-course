@@ -4,12 +4,27 @@
     display: inline-block;
     float: left;
     z-index: 10;
-    background: white;
     position: fixed;
     box-shadow: 1px 1px 5px 0px grey;
     max-height: 100%;
     overflow-y: scroll;
     top: 0;
+    background-color: #00a599;
+}
+.toc a {
+    color: white;
+    font-size: .85em;
+}
+#toc>li {
+    color: white;
+}
+ol#toc>li.section a {
+    color: white;
+    font-size: 100%;
+    font-weight: bold;
+}
+li#toc_title-slide {
+    padding-top: 1.25em;
 }
 .notes {
     display: inline-block;
@@ -38,11 +53,13 @@ body {
 
 /* Handling TOC Progress */
 .tocHighlight {
-    background: yellow;
+    background: #82d1cb;
 }
-
 span.toggleButton {
-    position: fixed;
+    float: right;
+    margin-right: 1.1em;
+    margin-top: .3em;
+    color: white;
 }
 .notes-container h2 {
     text-align: center;
