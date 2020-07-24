@@ -134,7 +134,7 @@ ol#toc>li.section {
     font-size: .8em !important;
 }
 #toc li a, a:visited {
-    color: black;
+    color: white;
 }
 p.subtitle {
     font-family: Roboto;
