@@ -95,6 +95,7 @@ body {
 .modal p, .modal ul, .modal h1, .modal h2 {
     max-width: calc(100% - 1em);
     margin: 0.5em;
+    color: white;
 }
 .modal.notes {
     right: 0;
