@@ -321,3 +321,12 @@ header img {
 header {
     position: relative;
 }
+#info p {
+    font-size: .9em !important;
+}
+#info li {
+    font-size: 1em !important;
+}
+.feedbackCallToAction a {
+    font-weight: 600;
+}
