@@ -391,7 +391,7 @@ header {
 .title-break img, .prompt-question img {
     display: block;
 }
-.title-break, .prompt-question h2 {
+.title-break h2, .prompt-question h2 {
     display: block;
     padding: 0em;
     margin-left: 6em !important;
