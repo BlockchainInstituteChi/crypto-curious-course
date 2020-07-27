@@ -307,6 +307,10 @@ header img {
     font-size: 3.5em;
     line-height: 1em;
 }
+.fullScreen article h4 {
+    margin-left: .5em !important;
+    font-size: 1.25em;
+}
 .slideBody.fullScreen {
     background: white;
 }
@@ -401,4 +405,8 @@ header {
     margin-left: 4em !important;
     margin-right: 4em !important;
     margin-top: 5.2em !important;
+}
+article h4 {
+    padding-left: 0em;
+    font-size: 1.25em;
 }
