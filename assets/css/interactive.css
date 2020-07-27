@@ -294,6 +294,9 @@ article.title-break>div, article.prompt-question>div {
 article h2 {
     max-width: 70%;
 }
+header img {
+    display: block;
+}
 
 /* fullscreen */
 .fullScreen li, .fullScreen h1, .fullScreen h2, .fullScreen h3, .fullScreen h4, .fullScreen span, .fullScreen p {
