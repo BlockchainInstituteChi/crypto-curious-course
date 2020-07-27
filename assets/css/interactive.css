@@ -346,7 +346,7 @@ article.full-image>div>figure>img {
 .fullScreen a:visited {
     color: black;
 }
-.fullScreen article#block-example {
+article#block-example {
     background-color: white;
     border-right: 0;
 }
