@@ -1,3 +1,8 @@
+
+.presenterOnly {
+    display: block;
+  }
+
 article#title-slide {
     margin-top: 0em;
 }

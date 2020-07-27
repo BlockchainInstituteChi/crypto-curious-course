@@ -667,3 +667,18 @@ img.notesIcon {
   text-decoration: none;
   text-align: center;
 }
+
+
+.presenterOnly {
+  display: none;
+}
+
+/* fix for broken title headers*/
+.prompt-question h2, .title-break h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 9rem !important;
+}
+.title-break h2 {
+  color: white;
+}
