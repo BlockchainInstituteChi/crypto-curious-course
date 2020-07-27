@@ -168,6 +168,9 @@ p.subtitle {
     margin: auto;
     margin-top: 4em;
 }
+article {
+    background: none;
+}
 
 /* Handling show-slide */
 .shown {
