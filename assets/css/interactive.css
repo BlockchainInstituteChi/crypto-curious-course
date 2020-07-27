@@ -340,6 +340,13 @@ article.full-image>div>figure>img {
 .fullScreen a:visited {
     color: black;
 }
+.fullScreen article#block-example {
+    background-color: white;
+    border-right: 0;
+}
+.fullScreen ul li ul li {
+    font-size: 1em !important;
+}
 
 
 
