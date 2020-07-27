@@ -683,6 +683,7 @@ header img {
     color: white;
     text-align: center;
     padding: 5.25em;
+  line-height: 1em;
 }
 .prompt-question h2 {
     text-transform: uppercase;
@@ -690,4 +691,5 @@ header img {
     color: #b13173;
     text-align: center;
     padding: 5.25em;
+  line-height: 1em;
 }
