@@ -95,6 +95,7 @@ body {
 .modal p, .modal ul, .modal h1, .modal h2 {
     max-width: calc(100% - 1em);
     margin: 0.5em;
+    color: white;
 }
 .modal.notes {
     right: 0;
@@ -292,13 +293,60 @@ article h2 {
 }
 
 /* fullscreen */
-.fullScreen li, .fullScreen h1, .fullScreen h2, .fullScreen h3, .fullScreen h4, .fullScreen span, .fullScreen p, .fullScreen a {
+.fullScreen li, .fullScreen h1, .fullScreen h2, .fullScreen h3, .fullScreen h4, .fullScreen span, .fullScreen p {
     /* color: white !important; */
     font-size: 2.5em;
+}
+.fullScreen h2 {
+    font-size: 3.5em;
+    line-height: 1em;
 }
 .slideBody.fullScreen {
     background: white;
 }
+.fullscreen header img {
+    width: 13em;
+    top: -0em;
+}
+.slideBody.fullScreen {
+    background: white;
+    padding: 3em;
+}
+article.full-image>div>figure>img {
+    width: 100%;
+    margin-top: .75em;
+}
+.fullScreen li, .fullScreen p, fullScreen a {
+    font-size: 1.4em !important;
+}
+.fullScreen .title-break h2, .fullScreen .prompt-question h2 {
+    font-size: 4em !important;
+    margin-left: 3.7em !important;
+    margin-right: 3.7em !important;
+    line-height: .8em;
+}
+.fullScreen figcaption {
+    font-size: 1.3em;
+}
+.fullScreen figcaption a {
+    font-size: 1em;
+}
+.fullScreen span.goal {
+    font-size: 1.25em;
+}
+.fullScreen span.handsOnParagraph {
+    font-size: 1.25em;
+}
+.fullScreen a:visited {
+    color: black;
+}
+
+
+
+
+
+
+
 article.example, .example div, .example header {
     color: black;
 }
@@ -320,4 +368,13 @@ header img {
 }
 header {
     position: relative;
+}
+#info p {
+    font-size: .9em !important;
+}
+#info li {
+    font-size: 1em !important;
+}
+.feedbackCallToAction a {
+    font-weight: 600;
 }
