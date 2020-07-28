@@ -188,7 +188,7 @@ p.subtitle {
 .controlBar {
     width: 100vw;
     position: fixed;
-    z-index: 15;
+    z-index: 25;
     left: 0;
     height: fit-content;
     position: fixed;
@@ -198,6 +198,7 @@ p.subtitle {
     width: fit-content;
     margin: auto;
     padding: 0;
+    background-color: white;
 }
 .controlBar li {
     display: inline-block;
@@ -246,6 +247,7 @@ span.toggleButton {
 .info span.toggleButton {
     margin-right: 1em;
     font-size: 1.5em;
+    color: #003449;
 }
 
 /* Cursor Styling */
@@ -383,3 +385,4 @@ header {
 .feedbackCallToAction a {
     font-weight: 600;
 }
+
