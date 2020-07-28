@@ -318,6 +318,10 @@ article.title-break>div, article.prompt-question>div {
 article h2 {
     max-width: 70%;
 }
+article#block-example {
+    background-color: white;
+    border-right: 0;
+}
 
 /* fullscreen */
 .fullScreen li, .fullScreen h1, .fullScreen h2, .fullScreen h3, .fullScreen h4, .fullScreen span, .fullScreen p {
@@ -403,5 +407,8 @@ header {
 }
 .feedbackCallToAction a {
     font-weight: 600;
+}
+.example header {
+    margin-top: -4em !important;
 }
 
