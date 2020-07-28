@@ -35,9 +35,14 @@ p {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.6vw;
 }
-
+header img {
+    position: absolute;
+    width: 11vw;
+    right: 1.5em;
+    top: 0.3em;
+}
 article.title-break>div {
     min-height: inherit;
 }
@@ -326,7 +331,6 @@ article h2 {
     background: white;
 }
 .fullscreen header img {
-    width: 13em;
     top: -0em;
 }
 .slideBody.fullScreen {
@@ -335,7 +339,7 @@ article h2 {
 }
 article.full-image>div>figure>img {
     width: 100%;
-    margin-top: .75em;
+    margin-top: 0em;
 }
 .fullScreen li, .fullScreen p, fullScreen a {
     font-size: 1.4em !important;
