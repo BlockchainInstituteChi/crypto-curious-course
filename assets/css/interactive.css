@@ -281,6 +281,12 @@ article.title-break>div, article.prompt-question>div {
     position: relative;
     height: 100%;
 }
+.title-break div h2, .prompt-question div h2 {
+    display: block;
+    position: relative;
+    height: 100px;
+    margin: auto !important;
+}
 .title-break h2, .prompt-question h2 {
     color: white;
     text-align: center;
