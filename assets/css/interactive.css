@@ -105,7 +105,7 @@ body {
 .modal.notes {
     right: 0;
     left: unset;
-    width: 40vw;
+    width: 25%;
     height: 100%;
     background-color: #b13173;
     padding: 2em 0em 2em 2em;
@@ -131,6 +131,10 @@ ol#toc>li.section a {
 ol#toc>li.section {
     color: white !important;
     font-size: .95em !important;
+    line-height: 1em;
+}
+ol#toc {
+    padding-right: 2em;
 }
 #toc>li {
     color: white;
@@ -140,6 +144,9 @@ ol#toc>li.section {
 }
 #toc li a, a:visited {
     color: white;
+}
+div#toc-container {
+    width: 25%;
 }
 p.subtitle {
     font-family: Roboto;
@@ -152,6 +159,7 @@ p.subtitle {
     font-size: 1.2em !important;
     margin-bottom: 1em;
     padding-left: 0em;
+    line-height: 1.25em;
 }
 .modal h4 {
     color: white;
