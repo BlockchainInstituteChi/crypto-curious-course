@@ -291,11 +291,12 @@ article.title-break>div, article.prompt-question>div {
     position: relative;
     height: 100px;
     margin: auto !important;
+    top: 11vw;
 }
 .title-break h2, .prompt-question h2 {
     color: white;
     text-align: center;
-    font-size: 2em !important;
+    font-size: 3vw !important;
     z-index: 1000 !important;
     margin-top: 25% !important;
     position: absolute;
