@@ -93,7 +93,7 @@ body {
     max-height: 100%;
     left: 0;
     overflow-y: scroll;
-    z-index: 20;
+    z-index: 1000;
     top: 0;
     padding: 1em 0em 0em 1.5em;
 }
