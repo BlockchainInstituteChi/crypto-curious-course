@@ -23,15 +23,15 @@ body {
 }
 
 li {
-    font-size: 1.5vw !important
+    font-size: 1.2vw !important
 }
 
 dl {
-    font-size: 1.5vw !important
+    font-size: 1.2vw !important
 }
 
 p {
-    font-size: 1.5vw !important
+    font-size: 1.2vw !important
 }
 
 h2 {
@@ -373,7 +373,7 @@ article.full-image>div>figure>img {
 }
 
 span.handsOnParagraph {
-    font-size: 1.5vw;
+    font-size: 1.2vw;
 }
 
 
