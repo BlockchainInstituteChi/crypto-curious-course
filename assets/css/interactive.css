@@ -365,6 +365,13 @@ article.full-image>div>figure>img {
     margin-right: 3.7em !important;
     line-height: .8em;
 }
+.title-break div h2, .prompt-question div h2 {
+    display: block;
+    position: relative;
+    height: 100px;
+    margin: auto !important;
+    top: 21vw;
+}
 .fullScreen figcaption {
     font-size: 1.3em;
 }
@@ -384,7 +391,12 @@ article.full-image>div>figure>img {
 span.handsOnParagraph {
     font-size: 1.2vw;
 }
-
+.fullScreen ul li ul li {
+    font-size: 1.8vw !important;
+}
+.fullScreen #transaction-status img {
+    height: 50%;
+}
 
 
 
