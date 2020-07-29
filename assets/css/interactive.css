@@ -36,6 +36,7 @@ p {
 
 h2 {
     font-size: 2.6vw;
+    line-height: 1em;
 }
 header img {
     position: absolute;
@@ -369,6 +370,10 @@ article.full-image>div>figure>img {
 }
 .fullScreen a:visited {
     color: black;
+}
+
+span.handsOnParagraph {
+    font-size: 1.5vw;
 }
 
 
