@@ -389,6 +389,9 @@ article.full-image>div>figure>img {
 .fullScreen a:visited {
     color: black;
 }
+.fullScreen .title-break div h2, .fullScreen .prompt-question div h2 {
+    top: 5.5em;
+}
 
 span.handsOnParagraph {
     font-size: 1.2vw;
