@@ -189,7 +189,11 @@ ogDesc: Become a blockchain ambassador today!
 
 <script>
     async function showSlide (slideId) {
-        // console.log('displaying slide', slideId)
+
+        if ( parseInt(slideId, 10) ) slideId = document.getElementsByTagName('article')[parseInt(slideId, 10) - 1].id
+        
+        console.log('displaying slide', slideId)
+   
         await hideShownSlides () 
 
         document.getElementById(slideId).className += ' shown'
@@ -265,7 +269,7 @@ ogDesc: Become a blockchain ambassador today!
     }
 
     function nextSlide ( ) {
-
+        
         var currentSlide = document.getElementsByClassName('shown')[0].id;
         var next = 0
 
@@ -420,4 +424,45 @@ ogDesc: Become a blockchain ambassador today!
         }
 
     }
+
+    window.onload = function ( ) {
+        checkForAnchorTags()
+    }
+    function checkForAnchorTags ( ) {
+        
+        if ( window.location.href.includes("#") ) {
+            var ref = window.location.href.split("#")[1].split('?')[0]
+
+            if ( !parseInt(ref, 10) ) {
+                if ( document.getElementById(ref) ) {
+                    showSlide(ref)
+                } else {
+                    console.log('invalid slide url', ref, parseInt(ref, 10))
+                }
+            } else {
+                // return console.log('failed to nav to slide', ref)
+                showSlide(parseInt(ref, 10))
+            }
+        }
+    }
+    function setAnchorText (slideId) {
+
+        var ref = {
+            base : window.location.href,
+            params : "",
+            anchor : "",
+            location : ""
+        }
+
+        if ( ref.base.includes("?") ) {
+            ref.params = ref.base.split('?')[1]
+        } 
+        if ( ref.base.includes("#") ) {
+            ref.params = bits[1].split('?')[0]
+            ref.location  = bits[0]
+        }
+        
+
+    }
+
 </script>
