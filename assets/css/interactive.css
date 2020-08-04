@@ -123,7 +123,8 @@ body {
     width: 25%;
     height: 100%;
     background-color: #b13173;
-    padding: 2em 0em 2em 2em;
+    /* padding: 2em 0em 2em 2em; */
+    overflow: hidden;
 }
 .notesBody {
     height: 100%;
@@ -251,10 +252,19 @@ p.subtitle {
     color: white;
 }
 span.toggleButton {
+    font-size: 1.5em;
     float: right;
     position: absolute;
-    right: 1.25em;
+    right: 0.5em;
     color: white;
+    top: 0.2em;
+}
+.modal.notes span.toggleButton {
+    float: right;
+    position: absolute;
+    left: 0.5em;
+    color: white;
+    top: 0.2em;
 }
 
 /* Info Section */
@@ -282,9 +292,13 @@ span.toggleButton {
     margin-left: -1em;
     position: fixed;
     width: 2.25em;
+    top: unset;
     height: 2.25em;
     background-color: #584f4f59;
     text-align: center;
+}
+#blockchain-institute a {
+    color: black;
 }
 
 /* Cursor Styling */
@@ -414,7 +428,9 @@ span.handsOnParagraph {
 .fullScreen #transaction-status img {
     height: 50%;
 }
-
+.fullScreen article.title-break>div, .fullScreen article.prompt-question>div {
+    overflow: hidden;
+}
 
 
 
