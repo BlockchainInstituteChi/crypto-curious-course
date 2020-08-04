@@ -437,3 +437,27 @@ header {
     margin-top: -4em !important;
 }
 
+span.copyTimeout {
+    color: white;
+    margin-left: 2em;
+}
+
+.copyNotice {
+    position: fixed;
+    top: 1em;
+    max-width: 14em;
+    background: #40be9482;
+    font-family: roboto;
+    margin: auto;
+    text-align: center;
+    padding: 0.25em 1em 0.25em 1em;
+    font-size: 0.85em;
+    left: 50%;
+    margin-left: -5em;
+    display: none;
+}
+
+.copyNotice.displayed {
+    display: block;
+}
+

@@ -5,6 +5,7 @@ ogTitle: Crypto Curious Teacher's Guide
 ogImage: assets/img/CCC_Title.jpeg
 ogDesc: Become a blockchain ambassador today!
 ---
+
 <div id="toc-container" class="modal tableOfContents hidden">
     <span onclick="tocToggle()" class="toggleButton">✕</span>
     <h2>Table of Contents</h2>
@@ -32,13 +33,17 @@ ogDesc: Become a blockchain ambassador today!
             <i class="fas fa-info-circle"></i>
             <span>Info</span>
         </li>
-        <li onclick="notesToggle()">
-            <i class="far fa-clipboard"></i>
-            <span>Notes</span>
-        </li>
         <li onclick="openDocView()">
             <i class="fas fa-file-alt"></i>
             <span>Document</span>
+        </li>
+        <li onclick="shareUrl()">
+            <i class="fa fa-share-alt" aria-hidden="true"></i>
+            <span>Share</span>
+        </li>
+        <li onclick="notesToggle()">
+            <i class="far fa-clipboard"></i>
+            <span>Notes</span>
         </li>
         <li onclick="presentationToggle()">
             <i class="fas fa-external-link-alt"></i>
@@ -234,7 +239,7 @@ ogDesc: Become a blockchain ambassador today!
         return 
     }    
 
-    showSlide('title-slide');
+    // showSlide('title-slide');
 
     window.notes = { 
         {% for slide in site.slides %}'{{ slide.slideId }}' : `{{ slide.notes }}`,{% endfor %}
@@ -344,6 +349,7 @@ ogDesc: Become a blockchain ambassador today!
     }
 
     function setCurrentSlide ( slideId ) {
+        setAnchorText (slideId)
         localStorage.setItem('currentSlide', slideId);
     }
 
@@ -443,6 +449,8 @@ ogDesc: Become a blockchain ambassador today!
                 // return console.log('failed to nav to slide', ref)
                 showSlide(parseInt(ref, 10))
             }
+        } else {
+            showSlide(1);
         }
     }
     function setAnchorText (slideId) {
@@ -454,15 +462,60 @@ ogDesc: Become a blockchain ambassador today!
             location : ""
         }
 
-        if ( ref.base.includes("?") ) {
-            ref.params = ref.base.split('?')[1]
-        } 
         if ( ref.base.includes("#") ) {
-            ref.params = bits[1].split('?')[0]
-            ref.location  = bits[0]
+            var bits = ref.base.split('#')
+                ref.location  = bits[0]
+
+            if ( bits[1].includes('?') ) {
+                ref.params = ref.base.split('?')[1]
+            }
+        } else {
+
+            if ( ref.base.includes('?') ) {
+                var bits = ref.base.split('?')
+                ref.location  = bits[0]
+                ref.params = bits[1]
+            } else {
+                ref.location  = ref.base
+            }
+        }
+        var locString = ref.location + "#" + slideId
+
+            if ( ref.params > '' ) {
+                locString += "?" + ref.params
+            }
+
+        window.location.href = locString
+    }
+
+    function shareUrl ( ) {
+        const el = document.createElement('textarea');
+        el.value = window.location.href;
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+        showCopyNotice()
+    }
+
+    function showCopyNotice ( ) {
+        var copyNotice = document.getElementsByClassName('copyNotice')[0]
+        var copyTimer = document.getElementsByClassName('copyTimeout')[0]
+        copyTimer.innerText = 5
+        copyNotice.className += " displayed"
+    
+        for ( let x = 1; x < 6; x++ ) {
+            setTimeout(function ( ) {
+                copyTimer.innerText = 6 - x
+                if ( x == 5) copyNotice.className = copyNotice.className.replace('displayed','')
+            }, x*1000 )
         }
         
-
     }
 
 </script>
+
+<div class="copyNotice">
+    <span>Copied the page url.</span>
+    <span class="copyTimeout">5</span>
+</div>
