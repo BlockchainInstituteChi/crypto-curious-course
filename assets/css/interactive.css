@@ -270,9 +270,21 @@ span.toggleButton {
     overflow-y: scroll;
 }
 .info span.toggleButton {
-    margin-right: 1em;
     font-size: 1.5em;
     color: #003449;
+    border-radius: 50%;
+    padding-top: 0.25em;
+    background: #612b0338;
+    bottom: 1.5em;
+    left: 50%;
+    z-index: 9999 !important;
+    display: block;
+    margin-left: -1em;
+    position: fixed;
+    width: 2.25em;
+    height: 2.25em;
+    background-color: #584f4f59;
+    text-align: center;
 }
 
 /* Cursor Styling */
@@ -440,12 +452,13 @@ header {
 span.copyTimeout {
     color: white;
     margin-left: 2em;
+    float: right;
 }
 
 .copyNotice {
     position: fixed;
     top: 1em;
-    max-width: 14em;
+    width: 14em;
     background: #40be9482;
     font-family: roboto;
     margin: auto;
@@ -453,7 +466,7 @@ span.copyTimeout {
     padding: 0.25em 1em 0.25em 1em;
     font-size: 0.85em;
     left: 50%;
-    margin-left: -5em;
+    margin-left: -7em;
     display: none;
 }
 
