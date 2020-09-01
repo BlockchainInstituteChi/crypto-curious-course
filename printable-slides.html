@@ -5,8 +5,11 @@ ogTitle: Crypto Curious Teacher's Guide
 ogImage: assets/img/CCC_Title.jpeg
 ogDesc: Become a blockchain ambassador today!
 ---
-{% assign sorted = site.slides | sort: 'slideId' %}
-{% for slide in site.slides %}
+
+{% for slideIndex in site.slidesList %}
+{% assign slide = site.slides 
+		| where_exp:"slide", "slide.slideId==slideIndex" 
+		| first %}
     {% if slide.type == "title-break" %}
 		{% include title-break.html 
             slideId=slide.slideId
