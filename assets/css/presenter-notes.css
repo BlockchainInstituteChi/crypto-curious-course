@@ -103,3 +103,10 @@ a {
 .controlBar {
     cursor: pointer;
 }
+.notesBody ol li {
+    color: white;
+    font-weight: 550;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    padding-bottom: 0.5rem;
+}

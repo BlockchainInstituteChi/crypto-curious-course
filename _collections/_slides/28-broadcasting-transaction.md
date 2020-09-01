@@ -2,7 +2,7 @@
 title: "Broadcasting the Transaction"
 slideId: "broadcasting-transaction"
 type: "full-image"
-img: "broadcasting_the_transaction.jpg"
+img: "WM__0002_TransactionFlow3.jpg"
 imgTitle: "Broadcasting the Transaction"
 imgAlt: "Broadcasting the transaction"
 notes: | 
