@@ -2,7 +2,7 @@
 title: "Data Signing"
 slideId: "data-signing"
 type: "full-image"
-img: "data_signing.jpg"
+img: "WM__0001_TransactionFlow2.jpg"
 imgTitle: "Data Signing"
 imgAlt: "Data signing"
 notes: | 

@@ -2,7 +2,7 @@
 title: "Mempool: Before Mining"
 slideId: "mempool-before-mining"
 type: "full-image"
-img: "mempool.jpg"
+img: "WM__0004_TransactionFlow5.jpg"
 imgTitle: "Mempool: Before Mining"
 imgAlt: "Bitcoin mining"
 notes: | 

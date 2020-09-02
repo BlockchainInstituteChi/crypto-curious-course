@@ -46,6 +46,7 @@ slidesList: [
   "early-bitcoin-use",
   "bitcoin-transaction-process",
   "its-software",
+  "tx-flow",
   "data-signing",
   "broadcasting-transaction",
   "validation",

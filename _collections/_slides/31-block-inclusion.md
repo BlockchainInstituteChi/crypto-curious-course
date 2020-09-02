@@ -2,7 +2,7 @@
 title: "Inclusion in a Block"
 slideId: "block-inclusion"
 type: "full-image"
-img: "inclusion_in_a_block.jpg"
+img: "WM__0005_TransactionFlow6.jpg"
 imgTitle: "Inclusion in a Block"
 imgAlt: "Transaction added to a block"
 notes: | 

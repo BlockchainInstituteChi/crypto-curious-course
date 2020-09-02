@@ -2,7 +2,7 @@
 title: "Validation"
 slideId: "validation"
 type: "full-image"
-img: "validation.jpg"
+img: "WM__0003_TransactionFlow4.jpg"
 imgTitle: "Validation"
 imgAlt: "Validation"
 notes: | 
