@@ -240,6 +240,7 @@ p.subtitle {
     padding-right: 0.65em;
     padding-bottom: 0.2em;
     text-align: center;
+    position: relative;
 }
 .controlBar span {
     display: block;
@@ -497,4 +498,26 @@ span.copyTimeout {
     font-family: sans-serif;
     text-transform: capitalize;
     padding-bottom: 0.5rem;
+}
+
+div#allOptions {
+    display: block;
+    position: absolute;
+    bottom: 4rem;
+    height: fit-content;
+    border: 1px solid black;
+    width: fit-content;
+    border-radius: 1rem;
+    left: -3.75rem;
+    min-width: 12rem;
+}
+.allOptions ul {
+    background: none;
+}
+.allOptions li {
+    display: block;
+    border-bottom: 1px solid #8080803d;
+}
+.allOptions li i {
+    float: left;
 }
