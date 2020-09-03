@@ -606,7 +606,7 @@ div#license {
 
 /* Notes Toggling */
 .hidden {
-  display: none;
+  display: none !important;
 }
 .notesToggleButton {
     color: blue;
