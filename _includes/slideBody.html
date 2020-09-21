@@ -1,0 +1,86 @@
+
+<div class="slideBody" id="slideBody" onclick="nextSlide()">
+    {% for slideIndex in site.slidesList %}
+    {% assign slide = site.slides 
+            | where_exp:"slide", "slide.slideId==slideIndex" 
+            | first %}
+        {% if slide.type == "title-break" %}
+            {% include title-break.html 
+                slideId=slide.slideId
+                title=slide.title
+                notes=slide.notes
+            %}
+        {% elsif slide.type == "full-image" %}
+            {% include full-image-slide.html 
+                slideId=slide.slideId
+                img=slide.img
+                imgAlt=slide.imgAlt
+                imgTitle=slide.imgTitle
+                imgCaption=slide.imgCaption
+                title=slide.title
+                notes=slide.notes
+            %}    
+        {% elsif slide.type == "full-text" %} 
+            {% include full-text-slide.html 
+                slideId=slide.slideId
+                title=slide.title
+                content=slide.bodyText
+                notes=slide.notes
+            %}
+        {% elsif slide.type == "example" %}
+            {% include example.html 
+                slideId=slide.slideId
+                title=slide.title
+                goal=slide.goal
+                content=slide.details
+            %}        
+        {% elsif slide.type == "left-right" %} 
+            {% include leftRightSlide.html 
+                slideId=slide.slideId
+                title=slide.title
+                content=slide.bodyText
+                notes=slide.notes
+                img=slide.img
+                imgAlt=slide.imgAlt
+                imgTitle=slide.imgTitle
+                imgCaption=slide.imgCaption
+            %}   
+        {% elsif slide.type == "top-bottom" %} 
+            {% include top-bottom-slide.html 
+                slideId=slide.slideId
+                title=slide.title
+                content=slide.bodyText
+                notes=slide.notes
+                img=slide.img
+                imgAlt=slide.imgAlt
+                imgTitle=slide.imgTitle
+                imgCaption=slide.imgCaption            
+            %}    
+        {% elsif slide.type == "prompt-question" %} 
+            {% include question-prompt-slide.html 
+                slideId=slide.slideId
+                title=slide.title
+                notes=slide.notes
+            %}
+        {% elsif slide.type == "custom" %} 
+            {% include custom-slide.html 
+                slideId=slide.slideId
+                title=slide.title
+                notes=slide.notes
+                content=slide.body
+            %}                                   
+        {% elsif slide.type == "default" %} 
+            {% include defaultSlide.html 
+                slideId=slide.slideId
+                title=slide.title
+                img=slide.img
+                imgAlt=slide.imgAlt
+                imgCaption=slide.imgCaption
+                imgTitle=slide.imgTitle
+                notes=slide.notes
+                content=slide.body
+            %} 
+        {% endif %}
+
+    {% endfor %}
+</div>
