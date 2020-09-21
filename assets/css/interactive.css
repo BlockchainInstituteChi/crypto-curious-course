@@ -510,6 +510,7 @@ div#allOptions {
     border-radius: 1rem;
     left: -3.75rem;
     min-width: 12rem;
+    background: white !important;
 }
 .allOptions ul {
     background: none;
@@ -522,3 +523,35 @@ div#allOptions {
     float: left;
 }
 
+
+/* LoginPrompt */
+section.userLoginPrompt {
+    position: absolute;
+    z-index: 1000;
+    left: 25vw;
+    width: 50vw;
+    top: 25vw;
+    background: white;
+    border: 1px solid grey;
+    padding: 1rem;
+    font-family: kanit;
+}
+.userLoginPrompt h3 {
+    font-size: 1.5rem !important;
+    color: red;
+    margin-top: 0rem !important;
+    margin-bottom: 0.5rem !important;
+}
+.loginForm span {
+    display: block;
+    padding-bottom: 1rem;
+}
+input.emailInput {
+    width: calc(100% - 4.5rem);
+}
+a.noThanks:hover {
+    color: red;
+}
+a.noThanks {
+    color: #524646;
+}
