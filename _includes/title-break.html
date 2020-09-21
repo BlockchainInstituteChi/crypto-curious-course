@@ -1,7 +1,7 @@
 <article class="title-break" id="{{ include.slideId }}">    
     <div>    
         <h2>{{ include.title }}</h2>
-        <img class="presenterOnly" src="/assets/img/blue-background.png">
+        <img class="presenterOnly"  class="lazyLoad" src="/assets/img/blue-background.png">
     </div>
     {% include toggleNotesButton.html
         slideId = include.slideId
