@@ -222,6 +222,17 @@ ogDesc: Become a blockchain ambassador today!
 </div>
 
 <script>
+    unsetLazyImg()
+
+    function unsetLazyImg ( ) {
+        var imgs = document.getElementsByTagName('img')
+        for ( img of imgs ) {
+            console.log('hiding image', img.src)
+            img.dataSrc = img.src
+            img.src = ""
+        }
+    }
+
     async function showSlide (slideId) {
 
         if ( parseInt(slideId, 10) ) slideId = document.getElementsByTagName('article')[parseInt(slideId, 10) - 1].id
@@ -229,7 +240,7 @@ ogDesc: Become a blockchain ambassador today!
         console.log('displaying slide', slideId)
    
         await hideShownSlides () 
-
+        loadImgForSlide(slideId)
         document.getElementById(slideId).className += ' shown'
         populateNotes(slideId)
         setCurrentSlide(slideId)
@@ -241,6 +252,13 @@ ogDesc: Become a blockchain ambassador today!
 
         scrollTocToView('toc_' + slideId);
 
+    }
+
+    function loadImgForSlide( slideId ) {
+        var imgs = document.getElementById(slideId).getElementsByTagName('img')
+        for ( img of imgs ) {
+            img.src = img.dataSrc
+        }
     }
 
     async function hideShownSlides ( ) {
