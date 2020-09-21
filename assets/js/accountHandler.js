@@ -8,8 +8,8 @@ window.serverUrl = "https://app.weteachblockchain.org/user"
 const renderMagic = async () => {
   console.log('magic render triggered')
 
-  const isLoggedIn = await magic.user.isLoggedIn();
-  console.log('checking user login', isLoggedIn)
+  window.isLoggedIn = await magic.user.isLoggedIn();
+  console.log('checking user login', window.isLoggedIn)
 
   /* Show login form if user is not logged in */
   let html = `
@@ -22,7 +22,7 @@ const renderMagic = async () => {
     </form>
   `;
 
-  if (isLoggedIn) {
+  if (window.isLoggedIn) {
     /* Get user metadata including email */
     // const userMetadata = await magic.user.getMetadata();
     hideLoginPrompt()
@@ -43,11 +43,11 @@ function hideLoginPrompt() {
 }
 
 const handleLogin = async e => {
-  console.log('handleLogin running')
+//   console.log('handleLogin running')
   e.preventDefault();
   const email = new FormData(e.target).get("email");
   if (email) {
-    console.log('running login flow')
+    // console.log('running login flow')
     const didToken = await magic.auth.loginWithMagicLink({ email });
 
     // window.localStorage.setItem('didToken', didToken); // we actually don't need to pass this token except for login. Magic does the rest :) 
