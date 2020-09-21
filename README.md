@@ -11,38 +11,35 @@ Each slide will be generated using a template from the _includes folder. To see 
 ## Title Break
 The title slides are the simplest of all. Notes are optional, and these will be shown automatically in the Table of Contents as section headers.
 
-< insert screenshot of format example here > 
+![Title Slide Preview](/assets/img/slideTemplateExamples/title-slide.png)
 
 ## Full Image
 One title, one image - it doesn't get any easier. Notes are optional but recommended.
 
-< insert screenshot of format example here >
+![Image Slide Preview](/assets/img/slideTemplateExamples/full-image.png)
 
 ## Full Text
 Text only. Specify a blob of text to show it below the title. 
 
-< insert screenshot of format example here >
+![Text Slide Preview](/assets/img/slideTemplateExamples/full-text.png)
 
 ## Left Right 
 Text on the left, image on the right. Useful for explaining keywords or recapping earlier lessons.
 
-< insert screenshot of format example here >
+![Left-Right Slide Preview](/assets/img/slideTemplateExamples/left-right.png)
 
 ## Top Bottom
 Got extra-wide images? Put your text area at the top, and show an image underneath!
 
-< insert screenshot of format example here >
+![Top Bottom Slide Preview](/assets/img/slideTemplateExamples/top-bottom.png)
 
 ## Prompt Question
 Just like a title slide, but with a pink background and a question mark?
 
-< insert screenshot of format example here >
+![Question Slide Preview](/assets/img/slideTemplateExamples/question-slide.png)
 
 ## Custom
-Anything goes - just enter a blob of multi-line HTML or markup text, and you can create your very own slide format for special cases like iframe'd videos or code samples!
-
-< insert screenshot of format example here >
-
+Anything goes - just enter a blob of multi-line HTML or markup text, and you can create your very own slide format for special cases like iframe'd videos or code samples! 
 
 # Slide Attributes 
 Each slide can have a range of attributes specified, which control how they are generated and how content is handled.
