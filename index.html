@@ -136,7 +136,6 @@ ogDesc: Become a blockchain ambassador today!
     </div>
 </div>
 
-{% include loginToTrackProgress.html %}
 
 {% include slideBody.html %}
 
@@ -189,12 +188,12 @@ ogDesc: Become a blockchain ambassador today!
     }
 
     function openDocView () {
-        if ( !window.isLoggedIn ) return 
+        // if ( !window.isLoggedIn ) return 
         window.open('/document-view.html')
     }
 
     function openPrintableSlides ( ) {
-        if ( !window.isLoggedIn ) return
+        // if ( !window.isLoggedIn ) return
         window.location.hred = "/printable-slides.html"
     }
 
@@ -224,22 +223,22 @@ ogDesc: Become a blockchain ambassador today!
         document.getElementById('notes-body').innerHTML = window.notes[slideId]
     }
     function toggleAllOptions () {
-        if ( !window.isLoggedIn ) return
+        // if ( !window.isLoggedIn ) return
         toggleElement('allOptions')
     } 
 
     function infoToggle () {
-        if ( !window.isLoggedIn ) return
+        // if ( !window.isLoggedIn ) return
         toggleElement('info')
     } 
 
     function notesToggle () {
-        if ( !window.isLoggedIn ) return
+        // if ( !window.isLoggedIn ) return
         toggleElement('notes-container')
     } 
 
     function tocToggle () {
-        if ( !window.isLoggedIn ) return
+        // if ( !window.isLoggedIn ) return
         toggleElement('toc-container')
     }
 
@@ -253,7 +252,7 @@ ogDesc: Become a blockchain ambassador today!
     }
 
     function nextSlide ( ) {
-        if ( !window.isLoggedIn ) return
+        // if ( !window.isLoggedIn ) return
         
         var currentSlide = document.getElementsByClassName('shown')[0].id;
         var next = 0
@@ -271,7 +270,7 @@ ogDesc: Become a blockchain ambassador today!
     }
 
     function lastSlide ( ) {
-        if ( !window.isLoggedIn ) return
+        // if ( !window.isLoggedIn ) return
         
         var currentSlide = document.getElementsByClassName('shown')[0].id;
 
@@ -318,7 +317,7 @@ ogDesc: Become a blockchain ambassador today!
 
 
     async function presentationToggle () {
-        if ( !window.isLoggedIn ) return
+        // if ( !window.isLoggedIn ) return
 
         await openNotes ();
 
@@ -396,7 +395,7 @@ ogDesc: Become a blockchain ambassador today!
     }
 
     async function openFullscreen() {
-        if ( !window.isLoggedIn ) return
+        // if ( !window.isLoggedIn ) return
 
         var elem = document.getElementById('slideBody')
             elem.className += " fullScreen"
@@ -473,7 +472,7 @@ ogDesc: Become a blockchain ambassador today!
     }
 
     function shareUrl ( ) {
-        if ( !window.isLoggedIn ) return
+        // if ( !window.isLoggedIn ) return
 
         const el = document.createElement('textarea');
         el.value = window.location.href;
